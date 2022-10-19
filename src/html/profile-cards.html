@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href=".scss/core/_reset.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="" />
+    <title>Awesome profile-cards</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <include src="./partials/header.html" image-class="header__img--profilecards"></include>
+    <!--HEADER-->
+    <main class="main">
+        <section class="main__card">
+            <!-- FALTAN LAS CLASES A PARTIR DE AQUÍ -->
+            <button type="reset"><i class="fa-sharp fa-solid fa-trash-can"></i>Reset</button>
+            <article>
+                <div>
+                    <h1>Nombre apellido</h1>
+                    <p>Front-end developer</p>
+                </div>
+                <img src="./assets/images/profile-image.jpg" alt="Imagen de perfil">
+                <nav>
+                    <ul>
+                        <li><i class="fa-solid fa-mobile-screen-button"></i></li>
+                        <li><i class="fa-regular fa-envelope"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li><i class="fa-brands fa-github-alt"></i></li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+        <section>
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>Diseña</legend>
+                    <label for="colors">Colores</label>
+                    <div>
+                        <input id="colors" type="radio" name="palette" value="palette1" required>
+                        <div class="dark-green"></div>
+                        <div class="dirty-blue"></div>
+                        <div class="hospital-green"></div>
+                    </div>
+                    <!-- FALTAN LOS OTROS DOS radio inputs -->
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rellena</legend>
+                    <label for="name">Nombre completo</label>
+                    <input id="name" type="text" name="name" required placeholder="Ej:Elena Arocena">
+
+                    <label for="job">Puesto</label>
+                    <input id="job" type="text" name="job" required placeholder="Ej:Front-end">
+
+                    <label for="photo">Imagen de perfil</label>
+                    <input id="photo" type="file" name="photo" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required placeholder="Ej:elena-arocena@gmail.com">
+
+                    <label for="phone">Teléfono</label>
+                    <input id="phone" type="tel" name="phone" required placeholder="Ej: XXX-XXX-XXX">
+
+                    <label for="linkedin">Linkedin</label>
+                    <input id="linkedin" type="text" name="linkedin" required
+                        placeholder="Ej: linkedin.com/in/maria-elena-arocena-lopez-">
+
+                    <label for="github">Github</label>
+                    <input id="github" type="text" name="github" required required placeholder="Ej:@marocena26">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comparte</legend>
+                    <button id="created-card" type="submit"><i class="fa-sharp fa-solid fa-address-card"></i>Crear
+                        tarjeta</button>
+                </fieldset>
+            </form>
+            <section>
+                <h3>La tarjeta ha sido creada</h3>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                    data-show-count="false">Compartir en twitter</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+
+        </section>
+    </main>
+
+
+
+
+    <!--FOOTER-->
+    <include src="./partials/footer.html"></include>
+    <!--FOOTER-->
+</body>
+
+</html>
