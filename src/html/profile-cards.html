@@ -20,100 +20,17 @@
     <!--HEADER-->
 
     <main class="main">
-        <section class="main__card">
-            <!-- CLASES AÑADIDAS SIN REVISAR A PARTIR DE AQUÍ -->
-            <button type="reset" class="card__button"><i class="fa-sharp fa-solid fa-trash-can"></i>Reset</button>
-            <article class="card__article">
-                <div class="article__profile">
-                    <h1 class="profile__name">Nombre apellido</h1>
-                    <p class="profile__text">Front-end developer</p>
-                </div>
-                <img src="./assets/images/profile-image.jpg" alt="Imagen de perfil" class="article__img">
-                <nav class="article__nav">
-                    <ul class="nav__list">
-                        <li><i class="fa-solid fa-mobile-screen-button"></i></li>
-                        <li><i class="fa-regular fa-envelope"></i></li>
-                        <li><i class="fa-brands fa-linkedin-in"></i></li>
-                        <li><i class="fa-brands fa-github-alt"></i></li>
-                    </ul>
-                </nav>
-            </article>
-        </section>
-        <section class="main__form">
-        
-        <!-- CLASES AÑADIDAS SIN REVISAR HASTA AQUÍ -->
-
-            <form action="" method="POST" >
-                <fieldset>
-                    <legend>Diseña</legend>
-                    <label for="colors">Colores</label>
-                    <div>
-                        <input id="colors" type="radio" name="palette" value="palette1" required>
-                        <div class="dark-green"></div>
-                        <div class="dirty-blue"></div>
-                        <div class="hospital-green"></div>
-                    </div>
-
-                    <!-- AQUÍ LO QUE HE AÑADIDO 
-
-                    <div>
-                        <input id="colors" type="radio" name="palette" value="palette2" required>
-                        <div class="dried-blood"></div>
-                        <div class="rusty-red"></div>
-                        <div class="tomato"></div>
-                    </div>
-
-                    <div>
-                        <input id="colors" type="radio" name="palette" value="palette3" required>
-                        <div class="slate"></div>
-                        <div class="faded-orange"></div>
-                        <div class="light-grey-blue"></div>
-                    </div>
-
-                    -->
-                   
-                </fieldset>
-
-                <fieldset>
-                    <legend>Rellena</legend>
-                    <label for="name">Nombre completo</label>
-                    <input id="name" type="text" name="name" required placeholder="Ej:Elena Arocena">
-
-                    <label for="job">Puesto</label>
-                    <input id="job" type="text" name="job" required placeholder="Ej:Front-end">
-
-                    <label for="photo">Imagen de perfil</label>
-                    <input id="photo" type="file" name="photo" required>
-
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email" required placeholder="Ej:elena-arocena@gmail.com">
-
-                    <label for="phone">Teléfono</label>
-                    <input id="phone" type="tel" name="phone" required placeholder="Ej: XXX-XXX-XXX">
-
-                    <label for="linkedin">Linkedin</label>
-                    <input id="linkedin" type="text" name="linkedin" required
-                        placeholder="Ej: linkedin.com/in/maria-elena-arocena-lopez-">
-
-                    <label for="github">Github</label>
-                    <input id="github" type="text" name="github" required required placeholder="Ej:@marocena26">
-                </fieldset>
-
-                <fieldset>
-                    <legend>Comparte</legend>
-                    <button id="created-card" type="submit"><i class="fa-sharp fa-solid fa-address-card"></i>Crear
-                        tarjeta</button>
-                </fieldset>
-            </form>
-            <section>
-                <h3>La tarjeta ha sido creada</h3>
-                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-                    data-show-count="false">Compartir en twitter</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </section>
-
-        </section>
+      <include src="partials/profile-cards-main-card.html"></include>
+      <section class="main__form">
+        <form action="" method="POST" >
+         <include src="partials/profile-cards-form-design.html"></include>
+         <include src="partials/profile-cards-form-fill.html"></include>
+         <include src="partials/profile-cards-form-share.html"></include>
+        </form>
+        <include src="partials/profile-cards-create.html"></include>
+      </section>
     </main>
+
 
     <!--FOOTER-->
     <include src="./partials/footer.html"></include>
