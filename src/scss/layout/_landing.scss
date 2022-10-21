@@ -1,4 +1,11 @@
+//TITULOS
+
 .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35.4px;
+    
     &__h1 {
         font-size: 19.2px;
         font-family: $font-family-merriweather; 
@@ -11,7 +18,41 @@
     }
 }
 
+//TITULOS
+//OPCIONES
+
+.options{
+
+    &__list{
+        border: solid 1.6px  $color-dull-orange;
+        //opacity: 21%;
+        border-radius: 4%;
+
+        &item {
+            font-size: 12.8px;
+            font-family: $font-family-opensans; 
+            color: $color-gunmetal;
+        }
+    } 
+}
+
+.fa-object-ungroup {
+    size: 22.4px;
+    color: $color-dull-orange;
+}
+.fa-keyboard {
+    size: 22.4px;
+    color: $color-dull-orange;
+}
+.fa-share-nodes {
+    size: 22.4px;
+    color: $color-dull-orange;
+}
+
+//OPCIONES
+//BOTÓN
 .start {
+    padding-bottom: 30px;
     &__link {
         font-size: 16px;
         font-family: $font-family-opensans; 
@@ -22,3 +63,4 @@
         padding: 10px 20px 10px 20px;
     }
 }
+
