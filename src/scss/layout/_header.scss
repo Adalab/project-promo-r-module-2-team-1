@@ -1,13 +1,18 @@
-.header {
+.headerlanding {
   display: flex;
   justify-content: center;
-  &__img--index {
+  &__img {
     margin: 95px 35px 35.4px 35px;
+    width: 250px;
+    height: 63px;
   }
 }
-.header {
+.headerprofilecards {
   background-color: $color-white;
-  &__img--profilecards {
-    margin: 31px, 79px, 30px, 40px;
+  min-height: 111px;
+  &__img {
+    margin: 31px 79px 30px 40px;
+    width: 201px;
+    height: 50px;
   }
 }
