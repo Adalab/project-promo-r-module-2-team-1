@@ -1,0 +1,24 @@
+.title {
+    &__h1 {
+        font-size: 19.2px;
+        font-family: $font-family-merriweather; 
+        color: $color-dull-orange;
+    }
+    &__text {
+        font-size: 12.8px;
+        font-family: $font-family-opensans; 
+        color: $color-dark-green;
+    }
+}
+
+.start {
+    &__link {
+        font-size: 16px;
+        font-family: $font-family-opensans; 
+        text-transform: uppercase;
+        color: $color-white;
+        background-color: $color-dirty-blue;
+        border-radius: 21px;
+        padding: 10px 20px 10px 20px;
+    }
+}
