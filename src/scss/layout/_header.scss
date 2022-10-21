@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: center;
+  &__img--index {
+    margin: 95px 35px 35.4px 35px;
+  }
+}
+.header {
+  background-color: $color-white;
+  &__img--profilecards {
+    margin: 31px, 79px, 30px, 40px;
+  }
+}
