@@ -1,13 +1,52 @@
-.main__card{
-    background-color: $color-silver; 
-}
+.card {
+  width: 100vw;
+  height: 457px;
+  background-color: $color-silver;
 
-.article__profile {
+  &__button {
+    width: 75px;
+    height: 30px;
+    margin-top: 38px;
+    margin-left: 45px;
+    padding: 4px 12px 5px 10px;
+    border-radius: 15px;
+    border: solid 1px $color-white;
+    
+  }
+  &__article {
+    height: 329px;
+    width: 290px;
     background-color: $color-white;
+    margin-top: 20px;
+    margin-left:45px;
+    padding: 21px 0 12px;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  }
 }
 
-.profile__name{
-    font-size:18px ;
+.profile {
+  width: 5px;
+  height: 42px;
+  margin: 2px 15px 10px 0;
+  background-color: $color-dirty-blue;
+
+  &__name {
+    font-size: 18px;
     color: $color-dark-green;
-    background-color: red;
+    width: 206px;
+    height: 20px;
+    margin: 0 14px 4px 15px;
+    font-family: $font-family-montserrat;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 16px;
+    color: $color-gunmetal;
+    width: 168px;
+    height: 20px;
+    margin: 4px 52px 10px 15px;
+    font-family: $font-family-montserrat;
+    line-height: 1.25;
+  }
 }
