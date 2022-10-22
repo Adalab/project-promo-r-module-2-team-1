@@ -5,13 +5,21 @@
     margin: 95px 35px 35.4px 35px;
     width: 250px;
     height: 63px;
+    @media all and (min-width: 768px) {
+      margin: 350px 175px 31px 175px;
+      width: 419px;
+      height: 105px;
+    }
   }
 }
 .headerprofilecards {
   background-color: $color-white;
   min-height: 111px;
+  display: flex;
+  justify-content: flex-start;
+
   &__img {
-    margin: 31px 79px 30px 40px;
+    margin: 31px 0px 30px 40px;
     width: 201px;
     height: 50px;
   }
