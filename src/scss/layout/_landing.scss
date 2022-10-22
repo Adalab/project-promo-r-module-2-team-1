@@ -1,12 +1,18 @@
 .main__index{
     background-color: $color-white-four;
-    //height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 35.4px;
     padding-bottom: 30px;
+
+    @media all and (min-width: 768px) {
+        padding-top: 31px;
+        padding-bottom: 60px;
+    }
+
 }
 
 //TITULOS
@@ -15,21 +21,35 @@
     text-align: center;
     padding-bottom: 17.8px;
 
+    @media all and (min-width: 768px) {
+        padding-bottom: 27px;
+    }
+
     &-h1 {
         font-size: 19.2px;
         font-family: $font-family-merriweather; 
         color: $color-dull-orange;
+
+        @media all and (min-width: 768px) {
+            font-size: 24px;
+        }
     }
+
     &-text {
         font-size: 12.8px;
         font-weight: 600;
         font-family: $font-family-opensans; 
         color: $color-dark-green;
         width: 35ch;
+
+        @media all and (min-width: 768px) {
+            font-size: 16px;
+        }
     }
 }
 
 //TITULOS
+
 //OPCIONES
 
 .main__options{
@@ -38,9 +58,17 @@
     border: solid 1.6px  rgba(225, 115, 52, 0.21);
     border-radius: 4px;
 
+    @media all and (min-width: 768px) {
+        border-radius: 5px;
+    }
+
     &-list{
         display: flex;
         gap: 24px;
+
+        @media all and (min-width: 768px) {
+            gap: 30px;
+        }
 
         &--item {
             list-style: none;
@@ -51,28 +79,28 @@
             font-size: 12.8px;
             font-family: $font-family-opensans; 
             color: $color-gunmetal;
+
+            @media all and (min-width: 768px) {
+                font-size: 16px;
+            }
         }
     } 
 }
 
-.fa-object-ungroup {
+.icon {
     font-size: 22.4px;
     color: $color-dull-orange;
-}
-.fa-keyboard {
-    font-size: 22.4px;
-    color: $color-dull-orange;
-}
-.fa-share-nodes {
-    font-size: 22.4px;
-    color: $color-dull-orange;
+    @media all and (min-width: 768px) {
+        font-size: 28px;
+    }
 }
 
 //OPCIONES
+
 //BOTÓN
 
 .main__start {
-    padding-top: 38.6px;
+    padding-top: 48.6px;
    
     &-link {
         font-size: 16px;
@@ -85,5 +113,8 @@
         border-radius: 21px;
         padding: 10px 20px 10px 20px;
     }
-}
 
+    @media all and (min-width: 768px) {
+        padding-top: 196px;
+    }
+}
