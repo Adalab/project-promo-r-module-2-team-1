@@ -1,30 +1,11 @@
 @import 'core/reset';
 @import 'core/variables';
+@import 'core/functions';
 @import 'layout/header';
+@import 'layout/landing';
+@import 'layout/profile-cards-preview';
+@import 'layout/profile-cards-create';
+@import 'layout/profile-cards-form-design';
+@import 'layout/profile-cards-form-fill';
+@import 'layout/profile-cards-form-share';
 @import 'layout/footer';
-/*@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'pages/index';
-@import 'pages/profile-cards';
-*/
-
-//CAMBIAR A SU PARTIAL CORRESPODIENTE (son los colores de los cuadraditos de los radio inputs.
-.dark-green {
-  background-color: $color-dark-green;
-  width: 30px;
-  height: 25px;
-}
-
-.dirty-blue {
-  background-color: $color-dirty-blue;
-  width: 30px;
-  height: 25px;
-}
-
-.hospital-green {
-  background-color: $color-hospital-green;
-  width: 30px;
-  height: 25px;
-}
-//END colores radio inputs
