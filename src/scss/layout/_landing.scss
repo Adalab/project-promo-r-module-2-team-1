@@ -17,7 +17,7 @@
 
 //TITULOS
 
-.main__title {
+.title {
     text-align: center;
     padding-bottom: 17.8px;
 
@@ -25,7 +25,7 @@
         padding-bottom: 27px;
     }
 
-    &-h1 {
+    &__h1 {
         font-size: 19.2px;
         font-family: $font-family-merriweather; 
         color: $color-dull-orange;
@@ -35,7 +35,7 @@
         }
     }
 
-    &-text {
+    &__text {
         font-size: 12.8px;
         font-weight: 600;
         font-family: $font-family-opensans; 
@@ -52,7 +52,7 @@
 
 //OPCIONES
 
-.main__options{
+.options{
     
     padding: 15px 20px 10px 20px;
     border: solid 1.6px  rgba(225, 115, 52, 0.21);
@@ -62,7 +62,7 @@
         border-radius: 5px;
     }
 
-    &-list{
+    &__list{
         display: flex;
         gap: 24px;
 
@@ -99,10 +99,10 @@
 
 //BOTÓN
 
-.main__start {
+.start {
     padding-top: 48.6px;
    
-    &-link {
+    &__link {
         font-size: 16px;
         font-family: $font-family-opensans; 
         text-transform: uppercase;
