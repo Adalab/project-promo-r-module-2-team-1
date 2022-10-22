@@ -1,0 +1,20 @@
+.footer {
+  background-color: $color-white;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__paragraph {
+    color: $color-brownish-grey;
+    opacity: 0.5;
+    font-family: font-family-opensans;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 18px;
+  }
+  &__img {
+    width: 103px;
+    height: 40px;
+    margin: 12px 0px 20px 0px;
+  }
+}
