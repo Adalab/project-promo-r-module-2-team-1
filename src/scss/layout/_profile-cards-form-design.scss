@@ -1,3 +1,103 @@
+.design{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px 22px 20px;
+
+  @media all and (min-width: 768px) {
+    padding: 0 30px 22px 40px;
+}
+
+  &__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 22px;
+
+    font-family: $font-family-opensans;
+    font-size: rem(18);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-gunmetal;
+  
+
+    &--icon{
+      font-size: rem(18);
+      color: $color-dull-orange;
+      padding-right: 10px;
+    }
+    &--scroll{
+      padding-left: 60%;
+    }
+  }
+
+  &__wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: solid 1px $color-white-two;
+    padding-bottom: 30px;
+  }
+  
+}
+
+/*TO DO: Usar esta clase en javascript para girar la flecha 
+cuando se colapse y descolapsen las secciones del form*/
+.arrow-up{
+  transform: rotate(180deg);
+  padding-right: 60%;
+}
+
+
+
+.color{
+  font-family: $font-family-opensans;
+  font-size: rem(14);
+  color: $color-gunmetal;
+  text-transform: uppercase;
+  padding-left: 19px;
+
+  @media all and (min-width: 768px) {
+    padding-left: 0;
+}
+
+}
+
+.palettes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__1{
+    display: flex;
+    flex-direction: row;
+    &--radio{
+      margin-right: 10px;
+    }
+  }
+  
+  &__2{
+    display: flex;
+    flex-direction: row;
+    &--radio{
+      margin-right: 10px;
+    }
+  }
+
+  &__3{
+    display: flex;
+    flex-direction: row;
+    &--radio{
+      margin-right: 10px;
+    }
+  }
+}
+
+
+/**************START RADIO BUTTONS PALETTES***************/
 /*START First radio button*/
 .dark-green {
   background-color: $color-dark-green;
@@ -54,3 +154,5 @@
   width: 30px;
   height: 25px;
 }
+/**************END RADIO BUTTONS PALETTES***************/
+
