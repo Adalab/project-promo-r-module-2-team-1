@@ -1,3 +1,22 @@
 .main__form {
     background-image: linear-gradient(to bottom, $color-white-four, $color-white 9%);
 }
+
+.legend{
+    &__icon{
+        font-size: rem(18);
+        color: $color-dull-orange;
+        padding-right: 10px;
+      }
+
+}
+
+/*TO DO: Usar esta clase en javascript para girar la flecha 
+cuando se colapse y descolapsen las secciones del form*/
+.arrow-up{
+    transform: rotate(180deg);
+  }
+  
+  .arrow-down{
+    transform: none;
+  }
