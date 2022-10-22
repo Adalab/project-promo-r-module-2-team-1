@@ -1,34 +1,53 @@
-//TITULOS
-
-.title {
+.main__index{
+    background-color: $color-white-four;
+    //height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-top: 35.4px;
-    
-    &__h1 {
+    padding-bottom: 30px;
+}
+
+//TITULOS
+
+.main__title {
+    text-align: center;
+    padding-bottom: 17.8px;
+
+    &-h1 {
         font-size: 19.2px;
         font-family: $font-family-merriweather; 
         color: $color-dull-orange;
     }
-    &__text {
+    &-text {
         font-size: 12.8px;
+        font-weight: 600;
         font-family: $font-family-opensans; 
         color: $color-dark-green;
+        width: 35ch;
     }
 }
 
 //TITULOS
 //OPCIONES
 
-.options{
+.main__options{
+    
+    padding: 15px 20px 10px 20px;
+    border: solid 1.6px  rgba(225, 115, 52, 0.21);
+    border-radius: 4px;
 
-    &__list{
-        border: solid 1.6px  $color-dull-orange;
-        //opacity: 21%;
-        border-radius: 4%;
+    &-list{
+        display: flex;
+        gap: 24px;
 
-        &item {
+        &--item {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             font-size: 12.8px;
             font-family: $font-family-opensans; 
             color: $color-gunmetal;
@@ -37,26 +56,30 @@
 }
 
 .fa-object-ungroup {
-    size: 22.4px;
+    font-size: 22.4px;
     color: $color-dull-orange;
 }
 .fa-keyboard {
-    size: 22.4px;
+    font-size: 22.4px;
     color: $color-dull-orange;
 }
 .fa-share-nodes {
-    size: 22.4px;
+    font-size: 22.4px;
     color: $color-dull-orange;
 }
 
 //OPCIONES
 //BOTÓN
-.start {
-    padding-bottom: 30px;
-    &__link {
+
+.main__start {
+    padding-top: 38.6px;
+   
+    &-link {
         font-size: 16px;
         font-family: $font-family-opensans; 
         text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
         color: $color-white;
         background-color: $color-dirty-blue;
         border-radius: 21px;
