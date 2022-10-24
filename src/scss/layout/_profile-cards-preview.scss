@@ -13,9 +13,10 @@
     border: solid 1px $color-white;
     color: $color-gunmetal;
     background-color: $color-silver;
+    font-size: 11px;
+    text-transform: uppercase;
   }
   &__article {
-    height: 329px;
     width: 240px;
     background-color: $color-white;
     margin-top: 20px;
@@ -71,16 +72,18 @@
     margin-right: 69.5px;
     margin-left: 20px;
     margin-top: 18px;
+    margin-bottom: 12px;
   }
   &__li {
     color: $color-dark-green;
     font-size: 18px;
-    width: 32px;
+    min-width: 32px;
     height: 32px;
     margin: 0 10px;
     border: solid 2px $color-hospital-green;
     border-radius: 16px;
     padding: 2px 2px 2px 2px;
+  
   }
 }
 
@@ -102,6 +105,8 @@
 @media all and (min-width: 1280px) {
   .card {
     width: 585px;
+    margin-right: 40px;
+    margin-top: 20px;
 
     &__button {
       margin-left: 173px;
