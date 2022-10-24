@@ -11,14 +11,15 @@
     padding: 4px 12px 5px 10px;
     border-radius: 15px;
     border: solid 1px $color-white;
-    
+    color: $color-gunmetal;
+    background-color: $color-silver;
   }
   &__article {
     height: 329px;
     width: 240px;
     background-color: $color-white;
     margin-top: 20px;
-    margin-left:45px;
+    margin-left: 45px;
     margin-right: 35px;
     padding: 21px 0 12px;
     border-radius: 2px;
@@ -53,17 +54,15 @@
   }
 }
 
-.image{
+.image {
   width: 240px;
   height: 200px;
   margin: 10px 0;
   background-image: url(../images/profile-image.jpg);
 }
 
-.nav{
-
-
-&__ul{
+.nav {
+  &__ul {
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -71,9 +70,8 @@
     margin-right: 69.5px;
     margin-left: 20px;
     margin-top: 18px;
-   
-}
-&__li{
+  }
+  &__li {
     color: $color-dark-green;
     font-size: 18px;
     width: 32px;
@@ -82,5 +80,35 @@
     border: solid 2px $color-hospital-green;
     border-radius: 16px;
     padding: 2px 2px 2px 2px;
+  }
 }
+
+@media all and (min-width: 768px) {
+  .card {
+    width: 329px;
+    height: 812px;
+    border-radius: 6px;
+
+    &__button {
+      margin-top: 173px;
+    }
+    &__article {
+      margin-right: 44px;
+      margin-bottom: 260px;
+    }
+  }
+}
+@media all and (min-width: 1280px) {
+  .card {
+    width: 585px;
+
+    &__button {
+      margin-left: 173px;
+    }
+
+    &__article {
+      margin-left: 173px;
+      margin-right: 172px;
+    }
+  }
 }
