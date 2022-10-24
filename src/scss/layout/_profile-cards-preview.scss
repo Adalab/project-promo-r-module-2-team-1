@@ -92,6 +92,8 @@
     width: 329px;
     height: 812px;
     border-radius: 6px;
+    margin-right: 40px;
+    margin-top: 20px;
 
     &__button {
       margin-top: 173px;
@@ -105,8 +107,7 @@
 @media all and (min-width: 1280px) {
   .card {
     width: 585px;
-    margin-right: 40px;
-    margin-top: 20px;
+  
 
     &__button {
       margin-left: 173px;
