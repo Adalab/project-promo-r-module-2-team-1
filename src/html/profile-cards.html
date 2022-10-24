@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href=".scss/core/_reset.scss" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="" />
-    <title>Awesome profile-cards</title>
-  </head>
 
-  <body>
-    <!--HEADER-->
-    <include
-      src="./partials/header.html"
-      headerClass="headerprofilecards"
-      imageClass="headerprofilecards__img"
-    ></include>
-    <!--HEADER-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href=".scss/core/_reset.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="" />
+  <title>Awesome profile-cards</title>
+</head>
 
-    <main class="main">
-      <include src="partials/profile-cards-preview.html"></include>
-      <section class="main__form">
-        <form action="" method="POST">
-          <include src="partials/profile-cards-form-design.html"></include>
-          <include src="partials/profile-cards-form-fill.html"></include>
-          <include src="partials/profile-cards-form-share.html"></include>
-        </form>
-        <include src="partials/profile-cards-create.html"></include>
-      </section>
-    </main>
+<body>
+  <!--HEADER-->
+  <include src="./partials/header.html" headerClass="headerprofilecards" imageClass="headerprofilecards__img"></include>
+  <!--HEADER-->
 
-    <!--FOOTER-->
-    <include src="./partials/footer.html"></include>
-    <!--FOOTER-->
-  </body>
+  <main class="main">
+    <include src="partials/profile-cards-preview.html"></include>
+    <section class="main__form">
+      <form action="" method="POST">
+        <include src="partials/profile-cards-form-design.html"></include>
+        <include src="partials/profile-cards-form-fill.html"></include>
+        <include src="partials/profile-cards-form-share.html"></include>
+      </form>
+      <include src="partials/profile-cards-create.html"></include>
+    </section>
+  </main>
+
+  <!--FOOTER-->
+  <include src="./partials/footer.html"></include>
+  <!--FOOTER-->
+</body>
+
 </html>

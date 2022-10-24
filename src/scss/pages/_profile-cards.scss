@@ -1,0 +1,33 @@
+.main{
+  
+  @media all and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, $color-white-four, $color-white 9%);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  &__form{
+    width: 100%;
+  }
+}
+
+
+.legend{
+    &__icon{
+        font-size: rem(18);
+        color: $color-dull-orange;
+        padding-right: 10px;
+      }
+
+}
+
+/*TO DO: Usar esta clase en javascript para girar la flecha 
+cuando se colapse y descolapsen las secciones del form*/
+.arrow-up{
+    transform: rotate(180deg);
+  }
+  
+  .arrow-down{
+    transform: none;
+  }
+  

@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: solid 1px $color-white-two;
+  border-top: solid 1px $color-white-two;
   @media all and (min-width: 768px) {
     min-height: 60px;
     flex-direction: row;
@@ -13,7 +13,7 @@
   &__paragraph {
     color: $color-brownish-grey;
     opacity: 0.5;
-    font-family: font-family-opensans;
+    font-family: $font-family-opensans;
     font-size: 14px;
     text-align: center;
     margin-top: 18px;

@@ -1,0 +1,134 @@
+.main__index{
+    background-color: $color-white-four;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    @media all and (min-width: 768px) {
+        padding-top: 31px;
+        padding-bottom: 60px;
+    }
+
+}
+
+//TITULOS
+
+.title {
+    text-align: center;
+    padding-bottom: 17.8px;
+
+    @media all and (min-width: 768px) {
+        padding-bottom: 27px;
+    }
+
+    &__h1 {
+        font-size: 19.2px;
+        font-weight: 600;
+        font-family: $font-family-merriweather; 
+        line-height: 22px;
+        color: $color-dull-orange;
+
+        @media all and (min-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    &__text {
+        font-size: 12.8px;
+        font-family: $font-family-opensans; 
+        line-height: 19px;
+        color: $color-dark-green;
+        width: 35ch;
+
+        @media all and (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}
+
+//TITULOS
+
+//OPCIONES
+
+.options{
+    
+    padding: 15px 0px 17.8px 0px;
+    border: solid 1.6px  rgba(225, 115, 52, 0.21);
+    border-radius: 4px;
+
+    @media all and (min-width: 768px) {
+        border: solid 2px  rgba(225, 115, 52, 0.21);
+        border-radius: 5px;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        //gap: 24px;
+        min-width: 268px;
+
+        @media all and (min-width: 768px) {
+            //gap: 30px;
+        }
+
+        &--item {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 12.8px;
+            font-family: $font-family-opensans; 
+            color: $color-gunmetal;
+
+            @media all and (min-width: 768px) {
+                font-size: 16px;
+            }
+        }
+
+        &--design {
+            margin-left: 20px;
+        }
+        &--share {
+            margin-right: 20px;
+        }
+    } 
+}
+
+.icon {
+    font-size: 22.4px;
+    color: $color-dull-orange;
+    @media all and (min-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+
+
+
+//OPCIONES
+
+//BOTÓN
+
+.start {
+    padding-top: 48.6px;
+   
+    &__link {
+        font-size: 16px;
+        font-family: $font-family-opensans; 
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        color: $color-white;
+        background-color: $color-dirty-blue;
+        border-radius: 21px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    @media all and (min-width: 768px) {
+        padding-top: 196px;
+    }
+}
