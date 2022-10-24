@@ -1,5 +1,9 @@
 .share {
-  padding: 0 20px 22px 20px;
+  padding: 0 20px 30px 20px;
+
+  @media all and (min-width: 768px) {
+    padding: 0 30px 30px 40px;
+  }
 
   &__wrap1 {
     display: flex;
