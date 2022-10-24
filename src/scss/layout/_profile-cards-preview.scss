@@ -1,0 +1,114 @@
+.card {
+  width: 100%;
+  height: 457px;
+  background-color: $color-silver;
+
+  &__button {
+    width: 75px;
+    height: 30px;
+    margin-top: 38px;
+    margin-left: 45px;
+    padding: 4px 12px 5px 10px;
+    border-radius: 15px;
+    border: solid 1px $color-white;
+    color: $color-gunmetal;
+    background-color: $color-silver;
+  }
+  &__article {
+    height: 329px;
+    width: 240px;
+    background-color: $color-white;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 35px;
+    padding: 21px 0 12px;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  }
+}
+
+.profile {
+  width: 5px;
+  height: 42px;
+  margin: 2px 15px 10px 0;
+  background-color: $color-dirty-blue;
+
+  &__name {
+    font-size: 18px;
+    color: $color-dark-green;
+    width: 206px;
+    height: 20px;
+    margin: 0 14px 4px 15px;
+    font-family: $font-family-montserrat;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  &__text {
+    font-size: 16px;
+    color: $color-gunmetal;
+    width: 168px;
+    height: 20px;
+    margin: 4px 52px 10px 15px;
+    font-family: $font-family-montserrat;
+    line-height: 1.25;
+  }
+}
+
+.image {
+  width: 240px;
+  height: 200px;
+  margin: 10px 0;
+  background-image: url(../images/profile-image.jpg);
+}
+
+.nav {
+  &__ul {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    margin-right: 69.5px;
+    margin-left: 20px;
+    margin-top: 18px;
+  }
+  &__li {
+    color: $color-dark-green;
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    border: solid 2px $color-hospital-green;
+    border-radius: 16px;
+    padding: 2px 2px 2px 2px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .card {
+    width: 329px;
+    height: 812px;
+    border-radius: 6px;
+
+    &__button {
+      margin-top: 173px;
+    }
+    &__article {
+      margin-right: 44px;
+      margin-bottom: 260px;
+    }
+  }
+}
+@media all and (min-width: 1280px) {
+  .card {
+    width: 585px;
+
+    &__button {
+      margin-left: 173px;
+    }
+
+    &__article {
+      margin-left: 173px;
+      margin-right: 172px;
+    }
+  }
+}
