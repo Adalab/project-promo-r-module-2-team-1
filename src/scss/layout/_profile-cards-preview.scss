@@ -75,8 +75,8 @@ margin-left: 20px;
   }
     
 &__li{
-  width: 32px;
-  height: 32px;
+  width: 27px;
+  height: 27px;
   border-radius: 50%;
   border: solid 2px $color-hospital-green;
   display: flex;
@@ -86,8 +86,9 @@ margin-left: 20px;
 }
 
   &__icon{
-  font-size: 18px;
+  font-size: 16px;
   color: $color-dark-green;
+
 }
 }
 
