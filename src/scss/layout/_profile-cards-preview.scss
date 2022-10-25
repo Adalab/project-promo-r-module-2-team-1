@@ -64,27 +64,31 @@
 }
 
 .nav {
+margin-left: 20px;
+
   &__ul {
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    justify-content: space-around;
-    margin-right: 69.5px;
-    margin-left: 20px;
-    margin-top: 18px;
-    margin-bottom: 12px;
-  }
-  &__li {
-    color: $color-dark-green;
-    font-size: 18px;
-    min-width: 32px;
-    height: 32px;
-    margin: 0 10px;
-    border: solid 2px $color-hospital-green;
-    border-radius: 16px;
-    padding: 2px 2px 2px 2px;
+     align-items: center;
+     gap:10px;
   
   }
+    
+&__li{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: solid 2px $color-hospital-green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+  &__icon{
+  font-size: 18px;
+  color: $color-dark-green;
+}
 }
 
 @media all and (min-width: 768px) {
