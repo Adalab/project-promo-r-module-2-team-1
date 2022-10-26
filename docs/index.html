@@ -3,66 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="icon" href="" />
+    <title>Awesome profile-cards</title>
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <!--HEADER-->
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <header class="headerlanding">
+      <img
+        class="headerlanding__img"
+        src="./assets/images/logo-awesome-profile-cards.svg"
+        alt="Logo Awesome Profile Cards"
+      />
+    </header>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
-      </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
+    <!--HEADER-->
+    <main class="main__index">
+      <!--LANDING-->
+        <section class="title">
+            <h1 class="title__h1">Crea tu tarjeta de visita</h1>
+            <p class="title__text">Crea mejores contactos profesionales de forma fácil y cómoda</p>
+        </section>
+        
+        <section class="options">
+          <ul class="options__list">
+            <li class="options__list--item options__list--design"><i class="icon fa-regular fa-object-ungroup"></i> Diseña</li>
+            <li class="options__list--item"><i class="icon fa-regular fa-keyboard"></i> Rellena</li>
+            <li class="options__list--item options__list--share"><i class="icon fa-solid fa-share-nodes"></i> Comparte</li>
+          </ul>
+        </section>
+        
+        <section class="start">
+          <a class="start__link" href="profile-cards.html">Comenzar</a>
+        </section>
+      </section>
+      <!--LANDING-->
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <p class="footer__paragraph">Awesome profile-cards &copy;2022</p>
+        <img class="footer__img" src="./assets/images/logo-adalab.png" alt="Logo Adalab">
+    </footer>
+    <!--FOOTER-->
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
