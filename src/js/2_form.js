@@ -1,111 +1,107 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 'use strict';
 
-// 1- Elementos de la página que voy a usar.
-
-const resetBtn = document.querySelector('.js-card__button');
-const profileName = document.querySelector ('.js-profile__name');
-const profileText = document.querySelector ('.js-profile__text');
-const profileImg = document.querySelector ('.js-image');
-const linkMobile = document.querySelector ('.js-nav__mobile');
-const linkEmail = document.querySelector ('.js-nav__mail');
-const linkLinkedin = document.querySelector ('.js-nav__linkedin');
-const linkGithub = document.querySelector ('.js-nav__github');
-
-
-const inputName = document.querySelector ('.js-name');
-const inputJob = document.querySelector ('.js-job');
-const inputPhoto = document.querySelector ('.js-photo');
-const inputEmail = document.querySelector ('.js-email');
-const inputPhone = document.querySelector ('.js-phone');
-const inputLinkedin = document.querySelector ('.js-linkedin');
-const inputGithub = document.querySelector ('.js-github');
-
-// 2- Variables globales: contiene los datos de la aplicación.
-
 // 3- Funciones.
 
+//función que maneja el quitar y poner las clases de las paletas
+
+function paletteHandler(event) {
+  cardArticlePreview.classList.remove('palette-1');
+  cardArticlePreview.classList.remove('palette-2');
+  cardArticlePreview.classList.remove('palette-3');
+  cardArticlePreview.classList.add(event.currentTarget.value);
+}
 
 // 4- Eventos.
 
+//Eventos click para las paletas (elemento input type = "radio") del formulario (DISEÑA)
+paletteRadio1.addEventListener('click', paletteHandler);
+paletteRadio2.addEventListener('click', paletteHandler);
+paletteRadio3.addEventListener('click', paletteHandler);
+
+//Evento input para el elemento input del Nombre en el formulario (RELLENA)
 inputName.addEventListener('input', (event) => {
   event.preventDefault();
   let name = '';
   name = inputName.value;
-  if (name === ''){
+  if (name === '') {
     profileName.innerHTML = 'Nombre apellido';
   } else {
     profileName.innerHTML = inputName.value;
   }
 });
 
+//Evento input para el elemento input del Trabajo en el formulario (RELLENA)
 inputJob.addEventListener('input', (event) => {
   event.preventDefault();
   let job = '';
   job = inputJob.value;
-  if (job === ''){
+  if (job === '') {
     profileText.innerHTML = 'Front-end developer';
   } else {
     profileText.innerHTML = inputJob.value;
   }
 });
 
+//Evento input para el elemento input del Teléfono en el formulario (RELLENA)
 inputPhone.addEventListener('input', (event) => {
   event.preventDefault();
   let phone = '';
   phone = inputPhone.value;
-  if (phone === ''){
+  if (phone === '') {
     linkMobile.href = '';
   } else {
     linkMobile.href = `tel:${inputPhone.value}`;
-    console.log(linkMobile.href);
   }
 });
 
+//Evento input para el elemento input del Email en el formulario (RELLENA)
 inputEmail.addEventListener('input', (event) => {
   event.preventDefault();
   let email = '';
   email = inputEmail.value;
-  if (email === ''){
+  if (email === '') {
     linkEmail.href = '';
   } else {
     linkEmail.href = `mailto:${inputEmail.value}`;
   }
 });
 
+//Evento input para el elemento input del Linkedin en el formulario (RELLENA)
 inputLinkedin.addEventListener('input', (event) => {
   event.preventDefault();
   let linkedin = '';
   linkedin = inputLinkedin.value;
-  if (linkedin === ''){
+  if (linkedin === '') {
     linkLinkedin.href = '';
   } else {
     linkLinkedin.href = inputLinkedin.value;
   }
 });
 
+//Evento input para el elemento input del Github en el formulario (RELLENA)
 inputGithub.addEventListener('input', (event) => {
   event.preventDefault();
   let github = '';
   github = inputGithub.value;
-  if (github === ''){
+  if (github === '') {
     linkGithub.href = '';
   } else {
     linkGithub.href = inputGithub.value;
   }
 });
 
-
-
+//TODO: añadir funcionalidad al botón Añadir imagen
+//y cambiar la imagen de fondo de la preview card
 
 /*resetBtn.addEventListener('click',(event) => {
-    event.preventDefault();
-    profileName.innerHTML =
-})*/
+      event.preventDefault();
+      profileName.innerHTML =
+  })*/
 
-/*Terjeta de nombre 
-tarjeta de profesion
-tarjeta de telefono
-tarjeta de email
-tarjeta de github*/
-
+/*Terjeta de nombre
+  tarjeta de profesion
+  tarjeta de telefono
+  tarjeta de email
+  tarjeta de github*/

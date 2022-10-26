@@ -1,3 +1,54 @@
+.palette-1 {
+  .profile {
+    background-color: $color-dirty-blue;
+    &__name {
+      color: $color-dark-green;
+    }
+  }
+  .nav {
+    &__li {
+      border: solid 2px $color-hospital-green;
+    }
+    &__icon {
+      color: $color-dark-green;
+    }
+  }
+}
+
+.palette-2 {
+  .profile {
+    background-color: $color-rusty-red;
+    &__name {
+      color: $color-dried-blood;
+    }
+  }
+  .nav {
+    &__li {
+      border: solid 2px $color-tomato;
+    }
+    &__icon {
+      color: $color-dried-blood;
+    }
+  }
+}
+
+.palette-3 {
+  .profile {
+    background-color: $color-faded-orange;
+    &__name {
+      color: $color-slate;
+    }
+  }
+  .nav {
+    &__li {
+      border: solid 2px $color-light-grey-blue;
+    }
+    &__icon {
+      color: $color-slate;
+    }
+  }
+}
+
 .card {
   width: 100%;
   height: 457px;
@@ -32,11 +83,9 @@
   width: 5px;
   height: 42px;
   margin: 2px 15px 10px 0;
-  background-color: $color-dirty-blue;
 
   &__name {
     font-size: 18px;
-    color: $color-dark-green;
     width: 206px;
     height: 20px;
     margin: 0 14px 4px 15px;
@@ -64,32 +113,27 @@
 }
 
 .nav {
-margin-left: 20px;
+  margin-left: 20px;
 
   &__ul {
     display: flex;
     flex-direction: row;
-     align-items: center;
-     gap:10px;
-  
+    align-items: center;
+    gap: 10px;
   }
-    
-&__li{
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  border: solid 2px $color-hospital-green;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-}
+  &__li {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-  &__icon{
-  font-size: 16px;
-  color: $color-dark-green;
-
-}
+  &__icon {
+    font-size: 16px;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -112,7 +156,6 @@ margin-left: 20px;
 @media all and (min-width: 1280px) {
   .card {
     width: 585px;
-  
 
     &__button {
       margin-left: 173px;
