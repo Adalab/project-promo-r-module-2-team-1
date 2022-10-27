@@ -27,4 +27,20 @@ const inputPhone = document.querySelector('.js-phone');
 const inputLinkedin = document.querySelector('.js-linkedin');
 const inputGithub = document.querySelector('.js-github');
 
+//Arrows
+const arrowDesign = document.querySelector('.js-arrow-design');
+const sectionDesign = document.querySelector('.js-design__wrap2');
+const arrowFill = document.querySelector('.js-arrow-fill');
+const sectionFill = document.querySelector('.js-fill__wrap2');
+const arrowShare = document.querySelector('.js-arrow-share');
+const sectionShare = document.querySelector('.js-share__wrap2');
+
+
+//Buttom form
+const createCardBtn = document.querySelector('.js-create__btn');
+const sectionCardCreate = document.querySelector('.js-share__wrap3');
+
+
+
+
 // 2- Variables globales: contiene los datos de la aplicación.
