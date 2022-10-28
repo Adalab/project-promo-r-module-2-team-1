@@ -1,3 +1,4 @@
+/*PALETAS*/
 .palette-1 {
   .profile {
     background-color: $color-dirty-blue;
@@ -49,6 +50,8 @@
   }
 }
 
+/*PALETAS*/
+
 .card {
   width: 100%;
   min-height: 457px;
@@ -58,6 +61,7 @@
   align-items: center;
 
   &__wrap{
+    width: 240px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,17 +69,19 @@
   }
 
   &__button {
-    width: 75px;
     height: 30px;
-    // margin-top: 38px;
-    // margin-left: 45px;
-    // padding: 4px 12px 5px 10px;
+    margin-bottom: 26px;
+    padding: 4px 12px 6px 10px;
     border-radius: 15px;
     border: solid 1px $color-white;
     color: $color-gunmetal;
     background-color: $color-silver;
     font-size: 11px;
     text-transform: uppercase;
+      &__reset__icon{
+        padding-right: 5px;
+      }
+   
   }
   &__article {
     width: 240px;
@@ -156,11 +162,11 @@
     margin-bottom: 20px;
 
     &__button {
-      margin-top: 173px;
+      // margin-top: 173px;
     }
     &__article {
-      margin-right: 44px;
-      margin-bottom: 260px;
+      // margin-right: 44px;
+      // margin-bottom: 260px;
     }
   }
 }
@@ -168,8 +174,8 @@
   .card {
 
     &__article {
-      margin-left: 173px;
-      margin-right: 172px;
+      // margin-left: 173px;
+      // margin-right: 172px;
     }
   }
 }
