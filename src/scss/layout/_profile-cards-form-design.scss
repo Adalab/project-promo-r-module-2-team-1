@@ -5,6 +5,7 @@
 
   @media all and (min-width: 768px) {
     padding: 0 30px 22px 40px;
+    width: 399px;
   }
 
   &__wrap1 {
@@ -31,7 +32,6 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    border-bottom: solid 1px $color-white-two;
     padding-bottom: 30px;
   }
 }

@@ -3,6 +3,7 @@
 
   @media all and (min-width: 768px) {
     padding: 0 30px 30px 40px;
+    width: 399px;
   }
 
   &__wrap1 {
@@ -27,7 +28,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: solid 1px $color-white-two;
     width: 100%;
 
     &--button {
@@ -55,7 +55,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: solid 1px $color-white-two;
     width: 100%;
     margin-top: 20px;
 
