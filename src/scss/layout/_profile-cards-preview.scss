@@ -53,9 +53,9 @@
 /*PALETAS*/
 
 .card {
-  width: 100%;
   min-height: 457px;
   background-color: $color-silver;
+  align-self: stretch;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,9 +86,6 @@
   &__article {
     width: 240px;
     background-color: $color-white;
-    // margin-top: 20px;
-    // margin-left: 45px;
-    // margin-right: 35px;
     padding: 21px 0 12px;
     border-radius: 2px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
@@ -160,22 +157,17 @@
     margin-right: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
+    min-height: 812px;
+    // justify-self: stretch;
+    // align-content: stretch;
+    align-self: auto;
+    flex-grow: 3;
 
-    &__button {
-      // margin-top: 173px;
-    }
-    &__article {
-      // margin-right: 44px;
-      // margin-bottom: 260px;
-    }
   }
 }
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1024px) {
   .card {
-
-    &__article {
-      // margin-left: 173px;
-      // margin-right: 172px;
-    }
+    //width: 57.13%;
+    
   }
 }
