@@ -5,8 +5,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  position: fixed;
-  bottom: 0;
   border-top: solid 1px $color-white-two;
   @media all and (min-width: 768px) {
     min-height: 60px;
