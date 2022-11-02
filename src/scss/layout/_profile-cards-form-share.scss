@@ -3,7 +3,6 @@
 
   @media all and (min-width: 768px) {
     padding: 0 30px 30px 40px;
-  
   }
 
   &__wrap1 {
@@ -12,6 +11,7 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 10px;
+    cursor: pointer;
 
     &--legend {
       display: flex;

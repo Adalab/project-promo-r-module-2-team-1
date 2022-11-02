@@ -1,100 +1,88 @@
+'use strict';
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-'use strict';
 
 // 3- Funciones.
 
 //función que maneja el quitar y poner las clases de las paletas
 
-function paletteHandler(event) {
+function handlePalette(event) {
   cardArticlePreview.classList.remove('palette-1');
   cardArticlePreview.classList.remove('palette-2');
   cardArticlePreview.classList.remove('palette-3');
   cardArticlePreview.classList.add(event.currentTarget.value);
 }
 
-// 4- Eventos.
+//función que maneja los inputs del form
+function handleInput(event) {
+  const elementName = event.target.name;
+  const value = event.target.value;
 
-//Eventos click para las paletas (elemento input type = "radio") del formulario (DISEÑA)
-paletteRadio1.addEventListener('click', paletteHandler);
-paletteRadio2.addEventListener('click', paletteHandler);
-paletteRadio3.addEventListener('click', paletteHandler);
+  data[elementName] = value;
+  updatePreview();
+}
 
-//Evento input para el elemento input del Nombre en el formulario (RELLENA)
-inputName.addEventListener('input', (event) => {
-  event.preventDefault();
-  let name = '';
-  name = inputName.value;
+//TODO: preguntar cómo simplicar esto y hacer lo de linkedin y github
+function updatePreview() {
+  //Elemento input del Nombre en el formulario (RELLENA)
+  const name = inputName.value;
   if (name === '') {
     profileName.innerHTML = 'Nombre apellido';
   } else {
-    profileName.innerHTML = inputName.value;
+    profileName.innerHTML = name;
   }
-});
-
-//Evento input para el elemento input del Trabajo en el formulario (RELLENA)
-inputJob.addEventListener('input', (event) => {
-  event.preventDefault();
-  let job = '';
-  job = inputJob.value;
+  //Elemento input del Trabajo en el formulario (RELLENA)
+  const job = inputJob.value;
   if (job === '') {
     profileText.innerHTML = 'Front-end developer';
   } else {
-    profileText.innerHTML = inputJob.value;
+    profileText.innerHTML = job;
   }
-});
-
-//Evento input para el elemento input del Teléfono en el formulario (RELLENA)
-inputPhone.addEventListener('input', (event) => {
-  event.preventDefault();
-  let phone = '';
-  phone = inputPhone.value;
+  //Elemento input del Teléfono en el formulario (RELLENA)
+  const phone = inputPhone.value;
   if (phone === '') {
     linkMobile.href = '';
   } else {
-    linkMobile.href = `tel:${inputPhone.value}`;
+    linkMobile.href = `tel:${phone}`;
   }
-});
-
-//Evento input para el elemento input del Email en el formulario (RELLENA)
-inputEmail.addEventListener('input', (event) => {
-  event.preventDefault();
-  let email = '';
-  email = inputEmail.value;
+  //Elemento input del Email en el formulario (RELLENA)
+  const email = inputEmail.value;
   if (email === '') {
     linkEmail.href = '';
   } else {
-    linkEmail.href = `mailto:${inputEmail.value}`;
+    linkEmail.href = `mailto:${email}`;
   }
-});
-
-//Evento input para el elemento input del Linkedin en el formulario (RELLENA)
-inputLinkedin.addEventListener('input', (event) => {
-  event.preventDefault();
-  let linkedin = '';
-  linkedin = inputLinkedin.value;
+  //Elemento input del linkedin en el formulario (RELLENA)
+  const linkedin = inputLinkedin.value;
   if (linkedin === '') {
     linkLinkedin.href = '';
   } else {
-    linkLinkedin.href = inputLinkedin.value;
+    linkLinkedin.href = linkedin;
   }
-});
-
-//Evento input para el elemento input del Github en el formulario (RELLENA)
-inputGithub.addEventListener('input', (event) => {
-  event.preventDefault();
-  let github = '';
-  github = inputGithub.value;
+  //Elemento input del github en el formulario (RELLENA)
+  const github = inputGithub.value;
   if (github === '') {
     linkGithub.href = '';
   } else {
-    linkGithub.href = inputGithub.value;
+    linkGithub.href = github;
   }
-});
+}
+
+// 4- Eventos.
+
+//Eventos click para las paletas (elemento input type = "radio") del formulario (DISEÑA)
+paletteRadio1.addEventListener('click', handlePalette);
+paletteRadio2.addEventListener('click', handlePalette);
+paletteRadio3.addEventListener('click', handlePalette);
+
+//Evento para el form completo
+form.addEventListener('input', handleInput);
 
 //TODO: añadir funcionalidad al botón Añadir imagen
 //y cambiar la imagen de fondo de la preview card
 
+//TODO: añadir funcionalidad del botón reset. Probar form.reset(), que es propio de JS
+//https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset
 /*resetBtn.addEventListener('click',(event) => {
       event.preventDefault();
       profileName.innerHTML =

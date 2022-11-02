@@ -60,7 +60,7 @@
   justify-content: center;
   align-items: center;
 
-  &__wrap{
+  &__wrap {
     width: 240px;
     display: flex;
     flex-direction: column;
@@ -78,10 +78,9 @@
     background-color: $color-silver;
     font-size: 11px;
     text-transform: uppercase;
-      &__reset__icon{
-        padding-right: 5px;
-      }
-   
+    &__reset__icon {
+      padding-right: 5px;
+    }
   }
   &__article {
     width: 240px;
@@ -94,27 +93,29 @@
 
 .profile {
   width: 5px;
-  height: 42px;
+  min-height: 42px;
   margin: 2px 15px 10px 0;
 
   &__name {
     font-size: 18px;
     width: 206px;
-    height: 20px;
+    min-height: 20px;
     margin: 0 14px 4px 15px;
     font-family: $font-family-montserrat;
     font-weight: bold;
     text-transform: capitalize;
+    word-wrap: break-word;
   }
   &__text {
     font-size: 16px;
     color: $color-gunmetal;
     width: 168px;
-    height: 20px;
+    min-height: 20px;
     margin: 4px 52px 10px 15px;
     font-family: $font-family-montserrat;
     line-height: 1.25;
     text-transform: capitalize;
+    word-wrap: break-word;
   }
 }
 
@@ -152,7 +153,6 @@
 
 @media all and (min-width: 768px) {
   .card {
-
     border-radius: 6px;
     margin-right: 40px;
     margin-top: 20px;
@@ -162,12 +162,10 @@
     // align-content: stretch;
     align-self: auto;
     flex-grow: 3;
-
   }
 }
 @media all and (min-width: 1024px) {
   .card {
     //width: 57.13%;
-    
   }
 }
