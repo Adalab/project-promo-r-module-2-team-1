@@ -32,6 +32,7 @@ const inputPhone = document.querySelector('.js-phone');
 const inputLinkedin = document.querySelector('.js-linkedin');
 const inputGithub = document.querySelector('.js-github');
 
+
 //elementos HTML del form de profile-cards, la parte de COMPARTE
 const shareClicker = document.querySelector('.js-share-clicker');
 

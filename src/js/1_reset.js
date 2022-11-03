@@ -1,9 +1,8 @@
-'use strict';
-/*resetBtn.addEventListener('click',(event) => {
-      event.preventDefault();
-      profileName.innerHTML =
-  })*/
+"use strict";
 
-function resetBtnClick(){
+resetBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  form.reset();
+  updatePreview();
 
-};
+});
