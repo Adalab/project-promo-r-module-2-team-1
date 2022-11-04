@@ -5,25 +5,12 @@
 designClicker.addEventListener('click', (event) => {
   event.preventDefault();
 
-  // Este está abierto cuando iniciamos
-
-  // Si hacen click en el no se puede cerrar si está abierto
-  // Si este NO tiene collapsed (está abierto) y hacen click no pasa na
   if (sectionDesign.classList.contains('collapsed')) {
     sectionDesign.classList.remove('collapsed');
     arrowDesign.classList.add('arrow-up');
     arrowDesign.classList.remove('arrow-down');
-
-    // CERRAR LOS OTROS
-    // CERRAR FILL
-    sectionFill.classList.add('collapsed');
-    arrowFill.classList.add('arrow-down');
-    arrowFill.classList.remove('arrow-up');
-
-    // CERRAR SHARE
-    sectionShare.classList.add('collapsed');
-    arrowShare.classList.add('arrow-down');
-    arrowShare.classList.remove('arrow-up');
+    closeFill();
+    closeShare();
   }
 });
 
@@ -34,16 +21,8 @@ fillClicker.addEventListener('click', (event) => {
     arrowFill.classList.add('arrow-up');
     arrowFill.classList.remove('arrow-down');
 
-    // CERRAR LOS OTROS
-    // CERRAR DESIGN
-    sectionDesign.classList.add('collapsed');
-    arrowDesign.classList.add('arrow-down');
-    arrowDesign.classList.remove('arrow-up');
-
-    // CERRAR SHARE
-    sectionShare.classList.add('collapsed');
-    arrowShare.classList.add('arrow-down');
-    arrowShare.classList.remove('arrow-up');
+    closeDesign();
+    closeShare();
   }
 });
 
@@ -53,17 +32,8 @@ shareClicker.addEventListener('click', (event) => {
     sectionShare.classList.remove('collapsed');
     arrowShare.classList.add('arrow-up');
     arrowShare.classList.remove('arrow-down');
-
-    // CERRAR LOS OTROS
-    // CERRAR DESIGN
-    sectionDesign.classList.add('collapsed');
-    arrowDesign.classList.add('arrow-down');
-    arrowDesign.classList.remove('arrow-up');
-
-    // CERRAR FILL
-    sectionFill.classList.add('collapsed');
-    arrowFill.classList.add('arrow-down');
-    arrowFill.classList.remove('arrow-up');
+    closeDesign();
+    closeFill();
   }
 });
 
@@ -75,3 +45,21 @@ createCardBtn.addEventListener('click', (event) => {
     sectionCardCreate.classList.add('collapsed');
   }
 });
+
+function closeDesign() {
+  sectionDesign.classList.add('collapsed');
+  arrowDesign.classList.add('arrow-down');
+  arrowDesign.classList.remove('arrow-up');
+}
+
+function closeShare() {
+  sectionShare.classList.add('collapsed');
+  arrowShare.classList.add('arrow-down');
+  arrowShare.classList.remove('arrow-up');
+}
+
+function closeFill() {
+  sectionFill.classList.add('collapsed');
+  arrowFill.classList.add('arrow-down');
+  arrowFill.classList.remove('arrow-up');
+}
