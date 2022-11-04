@@ -4,14 +4,13 @@
 
 designClicker.addEventListener('click', (event) => {
   event.preventDefault();
+
   if (sectionDesign.classList.contains('collapsed')) {
     sectionDesign.classList.remove('collapsed');
     arrowDesign.classList.add('arrow-up');
     arrowDesign.classList.remove('arrow-down');
-  } else {
-    sectionDesign.classList.add('collapsed');
-    arrowDesign.classList.add('arrow-down');
-    arrowDesign.classList.remove('arrow-up');
+    closeFill();
+    closeShare();
   }
 });
 
@@ -21,10 +20,8 @@ fillClicker.addEventListener('click', (event) => {
     sectionFill.classList.remove('collapsed');
     arrowFill.classList.add('arrow-up');
     arrowFill.classList.remove('arrow-down');
-  } else {
-    sectionFill.classList.add('collapsed');
-    arrowFill.classList.add('arrow-down');
-    arrowFill.classList.remove('arrow-up');
+    closeDesign();
+    closeShare();
   }
 });
 
@@ -40,6 +37,8 @@ shareClicker.addEventListener('click', (event) => {
     sectionCardCreate.classList.add('collapsed');
     arrowShare.classList.add('arrow-down');
     arrowShare.classList.remove('arrow-up');
+    closeDesign();
+    closeFill();
   }
 });
 
@@ -51,3 +50,21 @@ createCardBtn.addEventListener('click', (event) => {
     sectionCardCreate.classList.add('collapsed');
   }
 });
+
+function closeDesign() {
+  sectionDesign.classList.add('collapsed');
+  arrowDesign.classList.add('arrow-down');
+  arrowDesign.classList.remove('arrow-up');
+}
+
+function closeShare() {
+  sectionShare.classList.add('collapsed');
+  arrowShare.classList.add('arrow-down');
+  arrowShare.classList.remove('arrow-up');
+}
+
+function closeFill() {
+  sectionFill.classList.add('collapsed');
+  arrowFill.classList.add('arrow-down');
+  arrowFill.classList.remove('arrow-up');
+}
