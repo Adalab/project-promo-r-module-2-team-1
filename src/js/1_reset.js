@@ -6,10 +6,10 @@
 
 function resetBtnClick (event) {
   event.preventDefault();
-  // cardArticlePreview.classList.add('palette-1');
-  // cardArticlePreview.classList.remove('palette-2');
-  // cardArticlePreview.classList.remove('palette-3');
-  paletteRadio1.checked; //no se queda por defecto la primera clicada
+  cardArticlePreview.classList.add('palette-1');
+  cardArticlePreview.classList.remove('palette-2');
+  cardArticlePreview.classList.remove('palette-3');
+  paletteRadio1.checked = true; 
   inputName.value = '';
   inputJob.value = '';
   fileField.value = '';
