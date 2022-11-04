@@ -29,8 +29,14 @@ shareClicker.addEventListener('click', (event) => {
   event.preventDefault();
   if (sectionShare.classList.contains('collapsed')) {
     sectionShare.classList.remove('collapsed');
+    sectionCardCreate.classList.remove('collapsed');
     arrowShare.classList.add('arrow-up');
     arrowShare.classList.remove('arrow-down');
+  } else {
+    sectionShare.classList.add('collapsed');
+    sectionCardCreate.classList.add('collapsed');
+    arrowShare.classList.add('arrow-down');
+    arrowShare.classList.remove('arrow-up');
     closeDesign();
     closeFill();
   }
