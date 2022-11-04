@@ -2,44 +2,90 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 
-designClicker.addEventListener('click', (event) => {
+
+function showDesignClicker() {
+  sectionDesign.classList.remove('collapsed');
+}
+
+function hideDesignClicker() {
+  sectionDesign.classList.add('collapsed');
+}
+
+// ---------- FUNCION RELLENA -----------------
+function showFillClicker() {
+  sectionFill.classList.remove('collapsed');
+}
+
+function hideFillClicker() {
+  sectionFill.classList.add('collapsed');
+}
+
+// ---------- FUNCION COMPARTE -----------------
+
+function showShareClicker() {
+  sectionShare.classList.remove('collapsed');
+}
+
+function hideShareClicker() {
+  sectionShare.classList.add('collapsed');
+}
+
+
+// ---------- FUNCIONES MANEJADORAS -----------------
+//DISEÑA
+function handleClickDesing(event) {
   event.preventDefault();
   if (sectionDesign.classList.contains('collapsed')) {
-    sectionDesign.classList.remove('collapsed');
+    showDesignClicker();
     arrowDesign.classList.add('arrow-up');
     arrowDesign.classList.remove('arrow-down');
+    sectionFill.classList.add('collapsed');
+    sectionShare.classList.add('collapsed');
+    
   } else {
-    sectionDesign.classList.add('collapsed');
-    arrowDesign.classList.add('arrow-down');
+    hideDesignClicker();
     arrowDesign.classList.remove('arrow-up');
+    arrowDesign.classList.add('arrow-down');
+    sectionFill.classList.remove('collapsed');
+    sectionShare.classList.remove('collapsed');
   }
-});
-
-fillClicker.addEventListener('click', (event) => {
+}
+//RELLENA
+function handleClickFill(event) {
   event.preventDefault();
   if (sectionFill.classList.contains('collapsed')) {
-    sectionFill.classList.remove('collapsed');
+    showFillClicker();
     arrowFill.classList.add('arrow-up');
     arrowFill.classList.remove('arrow-down');
+    sectionDesign.classList.add('collapsed');
+    sectionShare.classList.add('collapsed');
   } else {
-    sectionFill.classList.add('collapsed');
-    arrowFill.classList.add('arrow-down');
+    hideFillClicker();
     arrowFill.classList.remove('arrow-up');
+    arrowFill.classList.add('arrow-down');
+    sectionDesign.classList.remove('collapsed');
+    sectionShare.classList.remove('collapsed');
   }
-});
-
-shareClicker.addEventListener('click', (event) => {
+}
+//COMPARTE
+function handleClickShare(event) {
   event.preventDefault();
   if (sectionShare.classList.contains('collapsed')) {
-    sectionShare.classList.remove('collapsed');
+    showShareClicker();
     arrowShare.classList.add('arrow-up');
     arrowShare.classList.remove('arrow-down');
+    sectionFill.classList.add('collapsed');
+    sectionDesign.classList.add('collapsed');
   } else {
-    sectionShare.classList.add('collapsed');
-    arrowShare.classList.add('arrow-down');
+    hideShareClicker();
     arrowShare.classList.remove('arrow-up');
+    arrowShare.classList.add('arrow-down');
+    sectionFill.classList.remove('collapsed');
+    sectionDesign.classList.remove('collapsed');
   }
-});
+}
+
+// ---------- FUNCIÓN BOTÓN (COLOCAR Y REVISAR) -----------------
 
 createCardBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -49,3 +95,9 @@ createCardBtn.addEventListener('click', (event) => {
     sectionCardCreate.classList.add('collapsed');
   }
 });
+
+// ---------- EVENTOS CLICK -----------------
+
+designClicker.addEventListener('click', handleClickDesing);
+fillClicker.addEventListener('click', handleClickFill);
+shareClicker.addEventListener('click', handleClickShare);
