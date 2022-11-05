@@ -1,12 +1,20 @@
-.body__index {
-  height: 100vh;
-  display: grid;
-  align-content: end;
-  grid-template-rows: 1fr auto;
-  background-color: $color-white-four;
+// .body__index {
+//   display: grid;
+//   align-content: end;
+//   grid-template-rows: 1fr auto;
+//   background-color: $color-white-four;
 
-  &__wrap {
-    width: 100%;
-    align-self: center;
-  }
-}
+//   @media all and (min-width: 768px) {
+//     //si no se quiere scroll en tablet y desktop, quitar esta línea
+//     //align-content: unset;
+//     height: 100vh;
+//   }
+
+//   @media all and (min-width: 1024px) {
+//   }
+
+//   &__wrap {
+//     width: 100%;
+//     align-self: center;
+//   }
+// }

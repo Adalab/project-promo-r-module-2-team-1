@@ -1,132 +1,136 @@
-.main__index{
-    background-color: $color-white-four;
+.main__index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  &__wrap1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding-bottom: 40px;
-   
-  
-
-    @media all and (min-width: 768px) {
-        padding-top: 31px;
-        padding-bottom: 60px;
-    }
-
+    gap: 38.6px;
+    align-items: center;
+    height: 100vh;
+  }
+  &__wrap2 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 //TITULOS
 
 .title {
-    text-align: center;
-    padding-bottom: 17.8px;
+  text-align: center;
+  padding-bottom: 17.8px;
+
+  @media all and (min-width: 768px) {
+    padding-bottom: 27px;
+  }
+
+  &__h1 {
+    font-size: 19.2px;
+    font-weight: 600;
+    font-family: $font-family-merriweather;
+    line-height: 22px;
+    color: $color-dull-orange;
 
     @media all and (min-width: 768px) {
-        padding-bottom: 27px;
+      font-size: 24px;
     }
+  }
 
-    &__h1 {
-        font-size: 19.2px;
-        font-weight: 600;
-        font-family: $font-family-merriweather; 
-        line-height: 22px;
-        color: $color-dull-orange;
+  &__text {
+    font-size: 12.8px;
+    font-family: $font-family-opensans;
+    line-height: 19px;
+    color: $color-dark-green;
+    width: 35ch;
 
-        @media all and (min-width: 768px) {
-            font-size: 24px;
-        }
+    @media all and (min-width: 768px) {
+      font-size: 16px;
     }
-
-    &__text {
-        font-size: 12.8px;
-        font-family: $font-family-opensans; 
-        line-height: 19px;
-        color: $color-dark-green;
-        width: 35ch;
-
-        @media all and (min-width: 768px) {
-            font-size: 16px;
-        }
-    }
+  }
 }
 
 //TITULOS
 
 //OPCIONES
 
-.options{
-    
-    padding: 15px 0px 17.8px 0px;
-    border: solid 1.6px  rgba(225, 115, 52, 0.21);
-    border-radius: 4px;
+.options {
+  padding: 15px 0px 17.8px 0px;
+  border: solid 1.6px rgba(225, 115, 52, 0.21);
+  border-radius: 4px;
+
+  @media all and (min-width: 768px) {
+    border: solid 2px rgba(225, 115, 52, 0.21);
+    border-radius: 5px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
 
     @media all and (min-width: 768px) {
-        border: solid 2px  rgba(225, 115, 52, 0.21);
-        border-radius: 5px;
     }
 
-    &__list{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        text-align: center;
+    &--item {
+      display: grid;
+      grid-row: 2/3;
+      font-size: 12.8px;
+      font-family: $font-family-opensans;
+      color: $color-gunmetal;
 
-        @media all and (min-width: 768px) {
-            
-        }
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
 
-        &--item {
-            display: grid;
-            grid-row: 2/3;
-            font-size: 12.8px;
-            font-family: $font-family-opensans; 
-            color: $color-gunmetal;
-
-            @media all and (min-width: 768px) {
-                font-size: 16px;
-            }
-        }
-
-        &--design {
-            margin-left: 20px;
-        }
-        &--share {
-            margin-right: 20px;
-        }
-    } 
+    &--design {
+      margin-left: 20px;
+    }
+    &--share {
+      margin-right: 20px;
+    }
+  }
 }
 
 .icon {
-    font-size: 22.4px;
-    color: $color-dull-orange;
-    @media all and (min-width: 768px) {
-        font-size: 28px;
-    }
+  font-size: 22.4px;
+  color: $color-dull-orange;
+  @media all and (min-width: 768px) {
+    font-size: 28px;
+  }
 }
-
-
-
 
 //OPCIONES
 
 //BOTÓN
 
 .start {
-    padding-top: 48.6px;
-   
-    &__link {
-        font-size: 16px;
-        font-family: $font-family-opensans; 
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-        color: $color-white;
-        background-color: $color-dirty-blue;
-        border-radius: 21px;
-        padding: 10px 20px 10px 20px;
-    }
+  //padding-top: 48.6px;
+  //align-self: flex-end;
+  padding-bottom: 140px;
 
-    @media all and (min-width: 768px) {
-        padding-top: 196px;
-    }
+  &__link {
+    font-size: 16px;
+    font-family: $font-family-opensans;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: $color-white;
+    background-color: $color-dirty-blue;
+    border-radius: 21px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  @media all and (min-width: 768px) {
+    padding-bottom: 120px;
+  }
 }

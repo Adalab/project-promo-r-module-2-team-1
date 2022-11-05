@@ -1,13 +1,13 @@
 .headerlanding {
-  display: flex;
-  justify-content: center;
   background-color: $color-white-four;
   &__img {
-    margin: 95px 35px 35.4px 35px;
+    //margin: 95px 35px 35.4px 35px;
+    margin-top: 95px;
     width: 250px;
     height: 63px;
     @media all and (min-width: 768px) {
-      margin: 350px 175px 31px 175px;
+      //margin: 350px 175px 31px 175px;
+      //margin-top: 350px;
       width: 419px;
       height: 105px;
     }

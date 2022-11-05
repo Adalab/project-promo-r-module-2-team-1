@@ -1,13 +1,15 @@
 .footer {
   background-color: $color-white;
   height: 110px;
-  width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
   border-top: solid 1px $color-white-two;
   @media all and (min-width: 768px) {
-    min-height: 60px;
+    height: 60px;
     flex-direction: row;
     justify-content: space-between;
   }
