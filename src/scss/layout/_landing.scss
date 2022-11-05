@@ -8,7 +8,6 @@
   &__wrap1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 38.6px;
     align-items: center;
     height: 100vh;
@@ -114,8 +113,6 @@
 //BOTÓN
 
 .start {
-  //padding-top: 48.6px;
-  //align-self: flex-end;
   padding-bottom: 140px;
 
   &__link {
