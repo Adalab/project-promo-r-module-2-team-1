@@ -69,14 +69,27 @@
       font-size: rem(12);
       color: $color-dull-orange;
       overflow: hidden;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       padding-top: 5px;
     }
-    /*         &--twitter{
-            
-        }
-        &--hr{
-            
-        } */
+    &--twitter{
+      text-decoration: none;
+      color: $color-white;
+      font-size: rem(14); 
+      background-color: #00a0f5; //añadir a las variables se llama #azure
+      font-family: $font-family-opensans;
+      width: 170px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      &--icon{
+        padding-right: 7px;
+        position: relative;
+        top: 1.5px;
+        font-size: rem(18);
+      }
+    }
   }
 }
