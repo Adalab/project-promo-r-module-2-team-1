@@ -36,14 +36,6 @@ shareClicker.addEventListener('click', (event) => {
   }
 });
 
-createCardBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-  if (sectionCardCreate.classList.contains('collapsed')) {
-    sectionCardCreate.classList.remove('collapsed');
-  } else {
-    sectionCardCreate.classList.add('collapsed');
-  }
-});
 
 function closeDesign() {
   sectionDesign.classList.add('collapsed');

@@ -10,7 +10,7 @@ function handlePalette(event) {
   cardArticlePreview.classList.remove('palette-1');
   cardArticlePreview.classList.remove('palette-2');
   cardArticlePreview.classList.remove('palette-3');
-  cardArticlePreview.classList.add(event.currentTarget.value);
+  cardArticlePreview.classList.add(`palette-${event.currentTarget.value}`);
 }
 
 //función que maneja los inputs del form
