@@ -31,28 +31,17 @@ function printFromLocal() {
     cardArticlePreview.classList.remove('palette-3');
   }
 
-  if (data.name) {
-    inputName.value = data.name;
-  }
-  if (data.job) {
-    inputJob.value = data.job;
-  }
+  inputName.value = data.name;
+  inputJob.value = data.job;
   if (data.photo) {
     profileImage.style.backgroundImage = `url(${data.photo})`;
     profilePreview.style.backgroundImage = `url(${data.photo})`;
   }
-  if (data.phone) {
-    inputPhone.value = data.phone;
-  }
-  if (data.email) {
-    inputEmail.value = data.email;
-  }
-  if (data.linkedin) {
-    inputLinkedin.value = data.linkedin;
-  }
-  if (data.github) {
-    inputGithub.value = data.github;
-  }
+  inputPhone.value = data.phone;
+  inputEmail.value = data.email;
+  inputLinkedin.value = data.linkedin;
+  inputGithub.value = data.github;
+
   //esta función pinta lo que tenga data en la tarjeta preview
   updatePreview();
 }
