@@ -46,7 +46,7 @@
       margin-bottom: 30px;
     }
 
-    &--errormessage{
+    &--errormessage {
       color: $color-gunmetal;
       font-family: $font-family-opensans;
       font-weight: 600;
@@ -78,10 +78,10 @@
       margin-bottom: 10px;
       padding-top: 5px;
     }
-    &--twitter{
+    &--twitter {
       text-decoration: none;
       color: $color-white;
-      font-size: rem(14); 
+      font-size: rem(14);
       background-color: #00a0f5; //añadir a las variables se llama #azure
       font-family: $font-family-opensans;
       width: 170px;
@@ -90,7 +90,7 @@
       line-height: 30px;
       border-radius: 3px;
       margin-bottom: 20px;
-      &--icon{
+      &--icon {
         padding-right: 7px;
         position: relative;
         top: 1.5px;
@@ -98,4 +98,10 @@
       }
     }
   }
+}
+
+.button-disabled {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  color: $color-white;
+  background-color: $color-button-disabled;
 }

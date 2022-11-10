@@ -79,18 +79,5 @@ paletteRadio3.addEventListener('click', handlePalette);
 //Evento para el form completo
 form.addEventListener('input', handleInput);
 
-//TODO: añadir funcionalidad al botón Añadir imagen
-//y cambiar la imagen de fondo de la preview card
-
-//TODO: añadir funcionalidad del botón reset. Probar form.reset(), que es propio de JS
-//https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset
-/*resetBtn.addEventListener('click',(event) => {
-      event.preventDefault();
-      profileName.innerHTML =
-  })*/
-
-/*Terjeta de nombre
-  tarjeta de profesion
-  tarjeta de telefono
-  tarjeta de email
-  tarjeta de github*/
+//Cuando se carga la página
+createCardBtn.disabled = false; //esto habrá que revisarlo

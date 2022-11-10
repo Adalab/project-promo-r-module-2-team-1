@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable no-undef */
 
 const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
