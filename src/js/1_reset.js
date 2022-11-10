@@ -4,6 +4,16 @@
 
 function resetBtnClick(event) {
   event.preventDefault();
+  data = {
+    palette: '1',
+    name: '',
+    job: '',
+    phone: '',
+    email: '',
+    linkedin: '',
+    github: '',
+    photo: '',
+  };
   //esto oculta la sección que se abre al clickar "Crear tarjeta"
   sectionCardCreate.classList.add('collapsed');
   cardArticlePreview.classList.add('palette-1');
@@ -25,8 +35,6 @@ function resetBtnClick(event) {
   createCardBtn.disabled = false;
   createCardBtn.classList.remove('button-disabled');
   updatePreview();
-  //hacemos un reload de la página porque no hay manera de borrar la caché de network (o como se llame)
-  location.reload();
 }
 
 //*Se podría hacer con reset() pero habría que añadir lo de cambiar las clases de las paletas
