@@ -26,7 +26,7 @@ createCardBtn.addEventListener('click', (event) => {
       } else {
         sectionCardCreate.classList.add('collapsed');
 
-        errorMessage.innerHTML = 'Debes rellenar todos las campos';
+        errorMessage.innerHTML = 'Debes rellenar todos los campos';
         console.log('error');
       }
     });
