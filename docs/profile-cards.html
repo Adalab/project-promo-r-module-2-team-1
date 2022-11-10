@@ -88,7 +88,7 @@
                   id="palette1"
                   type="radio"
                   name="palette"
-                  value="palette-1"
+                  value="1"
                   required
                   checked
                 />
@@ -103,7 +103,7 @@
                   id="palette2"
                   type="radio"
                   name="palette"
-                  value="palette-2"
+                  value="2"
                   required
                 />
                 <div class="palettes__2--color dried-blood"></div>
@@ -117,7 +117,7 @@
                   id="palette3"
                   type="radio"
                   name="palette"
-                  value="palette-3"
+                  value="3"
                   required
                 />
                 <div class="palettes__3--color slate"></div>
@@ -235,27 +235,17 @@
                         class="share__card fa-regular fa-address-card"></i>
                     Crear tarjeta
                 </button>
+                <p class="js-errormessage share__wrap2--errormessage"></p>
             </section>
             <div class="line"></div>
 
             <section class="js-share__wrap3 share__wrap3 collapsed">
                 <h3 class="share__wrap3--h3">La tarjeta ha sido creada:</h3>
-                <a class="share__wrap3--link" href="#">https://awesome-profile-card.com?id=A456DF0001</a>
-                    <a class="share__wrap3--twitter twitter-share-button"
-                    href="https://twitter.com/intent/tweet?text=Mirad%20mi%20nueva%20tarjeta%20https://awesome-profile-card.com?id=A456DF0001"
-                    data-size="large" target="_blank"><i class="fa-brands fa-twitter share__wrap3--twitter--icon"></i>
+                <a class="share__wrap3--link js-new_cardlink" href="#" target="_blank"></a>
+                <a class="share__wrap3--twitter twitter-share-button js-twitter-share-button"
+                    href="https://twitter.com/intent/tweet?text=Mirad%20mi%20nueva%20tarjeta%20" data-size="large"
+                    target="_blank"><i class="fa-brands fa-twitter share__wrap3--twitter--icon"></i>
                     Compartir en twitter</a>
-              
-                    <!-- <a class="share__wrap3--twitter twitter-share-button"
-                    href="https://twitter.com/intent/tweet"
-                    data-size="large"
-                    data-text="custom share text"
-                    data-url="https://dev.twitter.com/web/tweet-button"
-                    data-hashtags="example,demo"
-                    data-via="twitterdev"
-                    data-related="twitterapi,twitter">
-                    <i class="fa-brands fa-twitter share__wrap3--twitter--icon"></i>Compartir en twitter
-                    </a> ---> 
 
                 <div class="line"></div>
             </section>
