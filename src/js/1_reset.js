@@ -25,6 +25,8 @@ function resetBtnClick(event) {
   createCardBtn.disabled = false;
   createCardBtn.classList.remove('button-disabled');
   updatePreview();
+  //hacemos un reload de la página porque no hay manera de borrar la caché de network (o como se llame)
+  location.reload();
 }
 
 //*Se podría hacer con reset() pero habría que añadir lo de cambiar las clases de las paletas

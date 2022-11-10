@@ -2,7 +2,7 @@
 /* eslint-disable indent */
 /* eslint-disable no-undef */
 
-createCardBtn.addEventListener('click', (event) => {
+function handleCreateCardClick(event) {
   event.preventDefault();
   fetch('https://awesome-profile-cards.herokuapp.com/card', {
     method: 'POST',
@@ -10,7 +10,6 @@ createCardBtn.addEventListener('click', (event) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    cache: 'no-cache',
   })
     .then((response) => response.json())
 
@@ -24,6 +23,10 @@ createCardBtn.addEventListener('click', (event) => {
         twitterBtn.href += responseJson.cardURL;
         createCardBtn.disabled = true;
         createCardBtn.classList.add('button-disabled');
+        localStorage.setItem(
+          'newCardUrl',
+          JSON.stringify(responseJson.cardURL)
+        );
       } else {
         sectionCardCreate.classList.add('collapsed');
 
@@ -31,4 +34,6 @@ createCardBtn.addEventListener('click', (event) => {
         console.log('error');
       }
     });
-});
+}
+
+createCardBtn.addEventListener('click', handleCreateCardClick);
