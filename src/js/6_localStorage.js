@@ -1,11 +1,36 @@
 'use strict';
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 
-function saveData(){
+function saveData() {
   localStorage.setItem('dataFromForm', JSON.stringify(data));
 }
 
-function printFromLocal(){
+function printFromLocal() {
   data = JSON.parse(localStorage.getItem('dataFromForm'));
+
+  if (data.palette === '2') {
+    paletteRadio1.checked = false;
+    paletteRadio2.checked = true;
+    paletteRadio3.checked = false;
+    cardArticlePreview.classList.add('palette-2');
+    cardArticlePreview.classList.remove('palette-1');
+    cardArticlePreview.classList.remove('palette-3');
+  } else if (data.palette === '3') {
+    paletteRadio1.checked = false;
+    paletteRadio2.checked = false;
+    paletteRadio3.checked = true;
+    cardArticlePreview.classList.add('palette-3');
+    cardArticlePreview.classList.remove('palette-1');
+    cardArticlePreview.classList.remove('palette-2');
+  } else {
+    paletteRadio1.checked = true;
+    paletteRadio2.checked = false;
+    paletteRadio3.checked = false;
+    cardArticlePreview.classList.add('palette-1');
+    cardArticlePreview.classList.remove('palette-2');
+    cardArticlePreview.classList.remove('palette-3');
+  }
 
   inputName.value = data.name;
   inputJob.value = data.job;
@@ -19,9 +44,9 @@ function printFromLocal(){
   updatePreview();
 }
 
-if(JSON.parse(localStorage.getItem('dataFromForm')))
-    {printFromLocal()};
-
+if (JSON.parse(localStorage.getItem('dataFromForm'))) {
+  printFromLocal();
+}
 
 //if el localStorage está relleno, ejecuta printPreview()
 //si no está relleno pues nada

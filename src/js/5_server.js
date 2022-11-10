@@ -10,6 +10,7 @@ createCardBtn.addEventListener('click', (event) => {
     headers: {
       'Content-Type': 'application/json',
     },
+    cache: 'no-cache',
   })
     .then((response) => response.json())
 
