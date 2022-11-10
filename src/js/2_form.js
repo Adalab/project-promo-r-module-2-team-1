@@ -20,6 +20,7 @@ function handleInput(event) {
 
   data[elementName] = value;
   updatePreview();
+  saveData();
 }
 
 //TODO: preguntar cómo simplicar esto y hacer lo de linkedin y github

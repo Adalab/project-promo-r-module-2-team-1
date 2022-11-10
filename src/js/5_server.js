@@ -19,7 +19,7 @@ createCardBtn.addEventListener('click',(event) =>{
                 sectionCardCreate.classList.remove('collapsed'); 
                 errorMessage.innerHTML = '';
                 newCardLink.innerHTML = responseJson.cardURL;
-          saveData();
+          
         } else {
                 sectionCardCreate.classList.add('collapsed');
               

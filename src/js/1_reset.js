@@ -17,6 +17,7 @@ function resetBtnClick(event) {
   inputPhone.value = '';
   inputLinkedin.value = '';
   inputGithub.value = '';
+  localStorage.clear();
   updatePreview();
 }
 

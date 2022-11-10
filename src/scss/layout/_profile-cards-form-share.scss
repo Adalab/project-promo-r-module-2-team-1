@@ -46,6 +46,12 @@
       margin-bottom: 30px;
     }
 
+    &--errormessage{
+      color: $color-gunmetal;
+      font-family: $font-family-opensans;
+      font-weight: 600;
+    }
+
     &__card {
       padding-right: 9px;
     }

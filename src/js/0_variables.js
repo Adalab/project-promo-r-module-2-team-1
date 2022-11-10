@@ -54,7 +54,7 @@ const sectionCardCreate = document.querySelector('.js-share__wrap3');
 
 //Objeto que guarda la data del form
 let data = {
-  palette: '',
+  palette: '1',
   name: '',
   job: '',
   phone: '',
