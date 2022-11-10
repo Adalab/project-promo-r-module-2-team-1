@@ -27,4 +27,14 @@ function resetBtnClick(event) {
 //   updatePreview();
 // });
 
+//BUCLE ( añadir el bucle dentro de la funcion manejadora, mantener las paletas y update preview(); 
+//(habría que añadir la clase "js_reset" a los inputs.)
+
+// function reset() {
+//   const inputsToReset = document.querySelectorAll('.js_reset');
+//   for (let i = 0; i < inputsToReset.length; i++) {
+//     inputsToReset[i].value = '';
+//   }
+// }
+
 resetBtn.addEventListener('click', resetBtnClick);
