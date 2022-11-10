@@ -4,6 +4,8 @@
 
 function resetBtnClick(event) {
   event.preventDefault();
+  //esto oculta la sección que se abre al clickar "Crear tarjeta"
+  sectionCardCreate.classList.add('collapsed');
   cardArticlePreview.classList.add('palette-1');
   cardArticlePreview.classList.remove('palette-2');
   cardArticlePreview.classList.remove('palette-3');
@@ -17,6 +19,11 @@ function resetBtnClick(event) {
   inputPhone.value = '';
   inputLinkedin.value = '';
   inputGithub.value = '';
+  localStorage.clear();
+  twitterBtn.href =
+    'https://twitter.com/intent/tweet?text=Mirad%20mi%20nueva%20tarjeta%20';
+  createCardBtn.disabled = false;
+  createCardBtn.classList.remove('button-disabled');
   updatePreview();
 }
 
@@ -26,5 +33,15 @@ function resetBtnClick(event) {
 //   form.reset();
 //   updatePreview();
 // });
+
+//BUCLE ( añadir el bucle dentro de la funcion manejadora, mantener las paletas y update preview();
+//(habría que añadir la clase "js_reset" a los inputs.)
+
+// function reset() {
+//   const inputsToReset = document.querySelectorAll('.js_reset');
+//   for (let i = 0; i < inputsToReset.length; i++) {
+//     inputsToReset[i].value = '';
+//   }
+// }
 
 resetBtn.addEventListener('click', resetBtnClick);

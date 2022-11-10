@@ -10,7 +10,7 @@ function handlePalette(event) {
   cardArticlePreview.classList.remove('palette-1');
   cardArticlePreview.classList.remove('palette-2');
   cardArticlePreview.classList.remove('palette-3');
-  cardArticlePreview.classList.add(event.currentTarget.value);
+  cardArticlePreview.classList.add(`palette-${event.currentTarget.value}`);
 }
 
 //función que maneja los inputs del form
@@ -20,6 +20,7 @@ function handleInput(event) {
 
   data[elementName] = value;
   updatePreview();
+  saveData();
 }
 
 //TODO: preguntar cómo simplicar esto y hacer lo de linkedin y github
@@ -78,18 +79,5 @@ paletteRadio3.addEventListener('click', handlePalette);
 //Evento para el form completo
 form.addEventListener('input', handleInput);
 
-//TODO: añadir funcionalidad al botón Añadir imagen
-//y cambiar la imagen de fondo de la preview card
-
-//TODO: añadir funcionalidad del botón reset. Probar form.reset(), que es propio de JS
-//https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset
-/*resetBtn.addEventListener('click',(event) => {
-      event.preventDefault();
-      profileName.innerHTML =
-  })*/
-
-/*Terjeta de nombre
-  tarjeta de profesion
-  tarjeta de telefono
-  tarjeta de email
-  tarjeta de github*/
+//Cuando se carga la página
+createCardBtn.disabled = false; //esto habrá que revisarlo

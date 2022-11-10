@@ -32,9 +32,11 @@ const inputPhone = document.querySelector('.js-phone');
 const inputLinkedin = document.querySelector('.js-linkedin');
 const inputGithub = document.querySelector('.js-github');
 
-
 //elementos HTML del form de profile-cards, la parte de COMPARTE
 const shareClicker = document.querySelector('.js-share-clicker');
+const errorMessage = document.querySelector('.js-errormessage');
+const newCardLink = document.querySelector('.js-new_cardlink');
+const twitterBtn = document.querySelector('.js-twitter-share-button');
 
 //Arrows
 const arrowDesign = document.querySelector('.js-arrow-design');
@@ -51,8 +53,8 @@ const sectionCardCreate = document.querySelector('.js-share__wrap3');
 // 2- Variables globales: contiene los datos de la aplicación.
 
 //Objeto que guarda la data del form
-const data = {
-  palette: '',
+let data = {
+  palette: '1',
   name: '',
   job: '',
   phone: '',
