@@ -44,7 +44,7 @@ const sectionDesign = document.querySelector('.js-design__wrap2');
 const arrowFill = document.querySelector('.js-arrow-fill');
 const sectionFill = document.querySelector('.js-fill__wrap2');
 const arrowShare = document.querySelector('.js-arrow-share');
-const sectionShare = document.querySelector('.js-share__wrap2');
+const sectionShare = document.querySelector('.js-share-wrap-all');
 
 //Buttom form
 const createCardBtn = document.querySelector('.js-create__btn');

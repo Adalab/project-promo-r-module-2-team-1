@@ -4,6 +4,7 @@
 
 function resetBtnClick(event) {
   event.preventDefault();
+  //resetear la variable data
   data = {
     palette: '1',
     name: '',
@@ -14,12 +15,17 @@ function resetBtnClick(event) {
     github: '',
     photo: '',
   };
-  //esto oculta la sección que se abre al clickar "Crear tarjeta"
+  //esto oculta la sección de Twitter
   sectionCardCreate.classList.add('collapsed');
+  //resetear el link de la nueva tarjeta creada
+  newCardLink.value = '';
+  newCardLink.href = '';
+  //resetear las paletas
   cardArticlePreview.classList.add('palette-1');
   cardArticlePreview.classList.remove('palette-2');
   cardArticlePreview.classList.remove('palette-3');
   paletteRadio1.checked = true;
+  //resetear los inputs
   inputName.value = '';
   inputJob.value = '';
   fileField.value = '';
@@ -29,11 +35,15 @@ function resetBtnClick(event) {
   inputPhone.value = '';
   inputLinkedin.value = '';
   inputGithub.value = '';
+  //limpiar el local storage
   localStorage.clear();
+  //resetear el link del botón de Twitter
   twitterBtn.href =
     'https://twitter.com/intent/tweet?text=Mirad%20mi%20nueva%20tarjeta%20';
+  //volver a habilitar el botón de crear tarjeta
   createCardBtn.disabled = false;
   createCardBtn.classList.remove('button-disabled');
+
   updatePreview();
 }
 
