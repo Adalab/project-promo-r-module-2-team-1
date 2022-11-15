@@ -36,7 +36,7 @@
     font-weight: 600;
     font-family: $font-family-merriweather;
     line-height: 22px;
-    color: $color-dull-orange;
+    color: $blue-ncs;
 
     @media all and (min-width: 768px) {
       font-size: 24px;
@@ -66,7 +66,7 @@
   border-radius: 4px;
 
   @media all and (min-width: 768px) {
-    border: solid 2px rgba(225, 115, 52, 0.21);
+    border: solid 2px rgba(0, 150, 207, 0.21);
     border-radius: 5px;
   }
 
@@ -102,7 +102,7 @@
 
 .icon {
   font-size: 22.4px;
-  color: $color-dull-orange;
+  color: $blue-ncs;
   @media all and (min-width: 768px) {
     font-size: 28px;
   }
@@ -114,6 +114,7 @@
 
 .start {
   padding-bottom: 140px;
+  
 
   &__link {
     font-size: 16px;
@@ -121,13 +122,22 @@
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+    font-weight: 700;
     color: $color-white;
-    background-color: $color-dirty-blue;
+    //background-color: $rose-pink;
     border-radius: 21px;
     padding: 10px 20px 10px 20px;
+    background-image: linear-gradient(to right, $yellow-green-color-wheel,$blue-ncs);
+    
+    &:hover{
+      background-image: linear-gradient(to left, $yellow-green-color-wheel,$blue-ncs);
+      // transform: scale(2); Comprobar
+    }
+  
   }
 
   @media all and (min-width: 768px) {
     padding-bottom: 120px;
   }
 }
+

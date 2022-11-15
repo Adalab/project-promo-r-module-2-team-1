@@ -59,21 +59,21 @@
     text-decoration: none;
     text-align: center;
     color: $color-white;
-    background-color: $color-dull-orange;
+    background-color: $blue-ncs;
     width: 140px;
     border-radius: 3px;
     border: none;
     margin-right: 20px;
   }
   &__square {
-    border: solid 1px $color-hospital-green;
+    border: solid 1px $blue-ncs;
     height: 30px;
     width: 30px;
     background-size: cover;
   }
 
   &__input {
-    border: solid 1px $color-hospital-green;
+    border: solid 1px $blue-ncs;
     height: 30px;
     &::placeholder {
       color: $color-placeholder;
