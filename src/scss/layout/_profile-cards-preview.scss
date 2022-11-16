@@ -1,5 +1,9 @@
 /*PALETAS*/
 .palette-1 {
+  .image{
+    background-image: url(../images/finn.jpg);
+    background-position: bottom;
+  }
   .profile {
     background-color: $color-dirty-blue;
     &__name {
@@ -17,6 +21,11 @@
 }
 
 .palette-2 {
+  .image{
+    background-image: url(../images/marceline.jpg);
+    background-position: center;
+    
+  }
   .profile {
     background-color: $color-rusty-red;
     &__name {
@@ -34,6 +43,10 @@
 }
 
 .palette-3 {
+  .image{
+    background-image: url(../images/3beemo.jpg);
+    background-position: center;
+  }
   .profile {
     background-color: $color-faded-orange;
     &__name {
@@ -54,7 +67,8 @@
 
 .card {
   min-height: 457px;
-  background-color: $color-silver;
+  //background-color: $color-silver;
+  background-image: linear-gradient(to bottom, rgba(238, 113, 203, 0.5),rgba(0, 148, 207, 0.5));
   align-self: stretch;
   display: flex;
   justify-content: center;
@@ -73,12 +87,16 @@
     margin-bottom: 26px;
     padding: 4px 12px 6px 10px;
     border-radius: 15px;
-    border: solid 1px $color-white;
-    color: $color-gunmetal;
-    background-color: $color-silver;
+    border: solid 1px $blue-ncs;
+    font-weight: 700;
+    color: $color-white;
+    background-color: rgba(0, 148, 207, 0.7);
     font-size: 11px;
     text-transform: uppercase;
     cursor: pointer;
+    &:hover {
+      transform: scale(1.20);
+    }
     &__reset__icon {
       padding-right: 5px;
     }
@@ -88,7 +106,8 @@
     background-color: $color-white;
     padding: 21px 0 12px;
     border-radius: 2px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    //box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    box-shadow:$purple-shadow 0px 54px 55px,$purple-shadow 0px -12px 30px,$purple-shadow 0px 4px 6px, $purple-shadow 0px 12px 13px,$purple-shadow 0px -3px 5px;;
   }
 }
 
@@ -124,7 +143,7 @@
   width: 240px;
   height: 200px;
   margin: 10px 0;
-  background-image: url(../images/profile-image.jpg);
+  //background-image: url(../images/profile-image.jpg);
   background-size: cover;
 }
 
