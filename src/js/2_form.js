@@ -18,7 +18,21 @@ function handleInput(event) {
   const elementName = event.target.name;
   const value = event.target.value;
 
-  data[elementName] = value;
+  if (elementName === 'linkedin') {
+    const linkedinArray = value.split('/');
+    const length = linkedinArray.length;
+    if (value.endsWith('/')) {
+      data[elementName] = linkedinArray[length - 2];
+    } else {
+      data[elementName] = linkedinArray[length - 1];
+    }
+  } else if (elementName === 'github') {
+    const userGithub = value.replace('@', '');
+    data[elementName] = userGithub;
+  } else {
+    data[elementName] = value;
+  }
+
   updatePreview();
   saveData();
 }
@@ -58,14 +72,23 @@ function updatePreview() {
   if (linkedin === '') {
     linkLinkedin.href = '';
   } else {
-    linkLinkedin.href = linkedin;
+    const linkedinArray = linkedin.split('/');
+    const length = linkedinArray.length;
+    let userLinkedin = '';
+    if (linkedin.endsWith('/')) {
+      userLinkedin = linkedinArray[length - 2];
+    } else {
+      userLinkedin = linkedinArray[length - 1];
+    }
+    linkLinkedin.href = `https://www.linkedin.com/in/${userLinkedin}`;
   }
   //Elemento input del github en el formulario (RELLENA)
   const github = inputGithub.value;
   if (github === '') {
     linkGithub.href = '';
   } else {
-    linkGithub.href = github;
+    const userGithub = github.replace('@', '');
+    linkGithub.href = `https://github.com/${userGithub}`;
   }
 }
 
