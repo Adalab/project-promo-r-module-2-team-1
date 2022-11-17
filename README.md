@@ -59,13 +59,16 @@ Es importante tener en cuenta que la organización del código en este repositor
 
 El proyecto consta de 2 **páginas**:
 - Una página **landing** de bienvenida.
+
+![image](https://user-images.githubusercontent.com/113302094/202533970-35c67b5a-7ad1-42ef-9e39-9106920fd3e6.png)
+
 - Una página con la aplicación de **crear tarjetas**.
 
-
+![image](https://user-images.githubusercontent.com/113302094/202534113-91f488ea-0b38-4d63-93ef-53d6c4543349.png)
 
 La aplicación funciona siguiendo estos pasos:
 
-1. Permitir al usuario **elegir el estilo de la tarjeta**, eligiendo paleta de colores
+1. Permitir al usuario **elegir el estilo de la tarjeta**, eligiendo paleta de colores.
 2. Permitir al usuario que, mediante la introducción de información en un **formulario**, este texto se muestre maquetado automáticamente en un cuadro similar a una **tarjeta de visita**, que será la muestra del resultado final.
 3. Permitir que el usuario pueda crear una web con su tarjeta y **compartirla por Twitter**.
 
@@ -79,6 +82,10 @@ La tarjeta de visita deberá tener los **siguientes campos** (entre paréntesis 
 - RRSS
     - LinkedIn (linkedin)
     - GitHub (github)
+ 
+![image](https://user-images.githubusercontent.com/113302094/202535512-a70b735e-e841-4355-aecb-ca13af8717c5.png)
+
+![image](https://user-images.githubusercontent.com/113302094/202535016-49c452d5-b583-4f71-9aaf-6177a5cb26cb.png)
 
 **Respecto a la interacción** con la web:
 
@@ -86,9 +93,22 @@ La tarjeta de visita deberá tener los **siguientes campos** (entre paréntesis 
 - Las modificaciones que hacemos en el formulario (diseño y contenido), aparecen automáticamente en la vista previa de la tarjeta
 - Las 3 partes del proceso de creación serán elementos colapsables, que al hacer clic en el título se mostrará/ocultará solo mostrando una sección a la vez
 - Toda la información del formulario debe almacenarse en LocalStorage (almacenamiento local del navegador), de forma que al recargar la página siga disponible y podamos borrarla con un botón de Reset. Para esto, debemos definir una estructura de datos compleja (con arrays y objetos) que es lo que guardaremos en el navegador
-- Para compartir en Twitter seguiremos 2 pasos:
+
+### Respecto a la funcionalidad del botón de Twitter: 
+
+- Si el usuario no rellena los campos no se podrá compartir la tarjeta en Twitter:
+
+![image](https://user-images.githubusercontent.com/113302094/202536423-2156b7d4-7428-4e35-91d2-6667baaba32e.png)
+
+- Si el usuario ha rellenado todos los campos aparecerá el siguiente mensaje:
+
+![image](https://user-images.githubusercontent.com/113302094/202536672-88b8d059-dae7-4442-996f-4d62c4c2fbcd.png)
+
+- Una vez aparezca nuestro botón de compatir, seguiremos 2 pasos:
 1. Al hacer clic en el botón de "Enviar" enviaremos el formulario (submit) a un API que devolverá la URL de una web con la tarjeta de visita con la información rellena
 2. Mostraremos esta URL para que el usuario verifique si la tarjeta está bien definida y un botón de "Compartir" que enlazará a Twitter donde habrá un tweet con texto predefinido que incluye la URL de la tarjeta
+
+![image](https://user-images.githubusercontent.com/113302094/202535371-737e6170-8595-44f0-b8fe-b58f6cf3a8e4.png)
 
 ## Pasos a seguir para utilizar este proyecto en vuestro ordenador💾:
 
