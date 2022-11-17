@@ -90,6 +90,37 @@ La tarjeta de visita deberá tener los **siguientes campos** (entre paréntesis 
 1. Al hacer clic en el botón de "Enviar" enviaremos el formulario (submit) a un API que devolverá la URL de una web con la tarjeta de visita con la información rellena
 2. Mostraremos esta URL para que el usuario verifique si la tarjeta está bien definida y un botón de "Compartir" que enlazará a Twitter donde habrá un tweet con texto predefinido que incluye la URL de la tarjeta
 
+## Pasos a seguir para utilizar este proyecto en vuestro ordenador💾:
+
+Este proyecto se ha realizado utilizando una plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas, como es el Adalab web starter kit. Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. Para poder trabajar con él se debe tener previamente instalado Node JS.
+
+### Pasos a seguir cada vez que se quiere arrancar un proyecto desde cero:
+
+- Crea tu propio repositorio.
+- Descarga el Starter kit desde **[GitHub](https://github.com/Adalab/Adalab-web-starter-kit)**.
+- Copia todos los ficheros en la carpeta raíz del repositorio.
+- Abre una terminal e instala las dependencias locales ejecutando en la terminal de comando:
+
+```bash
+npm install
+```
+### Pasos para arrancar el proyecto:
+
+**El proyecto hay que arrancarlo cada vez que nos pongamoss a programar**, para ello ejecutaremos el comando:
+
+```bash
+npm start
+```
+Este comando:
+
+- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
+- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
+- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
+   - Convierte los ficheros SASS en CSS.
+   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+
+Después de ejecutar `npm start` ya podemos empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+
 ## Resultado final✨:
 
 Puedes echar un vistazo a cómo quedó en Github Pages: **[Coding Time](https://beta.adalab.es/project-promo-r-module-2-team-1/)**. 
