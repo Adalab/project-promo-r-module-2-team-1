@@ -39,8 +39,11 @@
 
 .footer__index {
   @include footer-common;
-  position: fixed;
-  bottom: 0;
+
+  @media all and (min-height: 568px) {
+    overflow: visible;
+  }
+
 }
 
 .footer {

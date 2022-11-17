@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: row;
   }
+
   &__button {
     display: flex;
     justify-content: center;
@@ -64,7 +65,9 @@
     border-radius: 3px;
     border: none;
     margin-right: 20px;
+    cursor: pointer;
   }
+
   &__square {
     border: solid 1px $blue-ncs;
     height: 30px;
@@ -75,10 +78,12 @@
   &__input {
     border: solid 1px $blue-ncs;
     height: 30px;
+
     &::placeholder {
       color: $color-placeholder;
       padding-left: 7px;
     }
+
     &--hide {
       display: none;
     }

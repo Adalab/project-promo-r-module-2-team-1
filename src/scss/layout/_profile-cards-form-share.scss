@@ -38,12 +38,13 @@
       text-decoration: none;
       text-align: center;
       color: $color-white;
-      background-color:$blue-ncs;
+      background-color: $blue-ncs;
       border-radius: 12px;
       border: none;
       padding: 13px 18px 13px 18px;
       margin-top: 30px;
       margin-bottom: 30px;
+      cursor: pointer;
     }
 
     &--errormessage {
@@ -69,15 +70,17 @@
       font-family: $font-family-opensans;
       font-weight: 600;
     }
+
     &--link {
       font-family: $font-family-opensans;
       text-align: center;
       font-size: rem(12);
-      color:$blue-ncs;
+      color: $blue-ncs;
       overflow: hidden;
       margin-bottom: 10px;
       padding-top: 5px;
     }
+
     &--twitter {
       text-decoration: none;
       color: $color-white;
@@ -90,6 +93,7 @@
       line-height: 30px;
       border-radius: 3px;
       margin-bottom: 20px;
+
       &--icon {
         padding-right: 7px;
         position: relative;
@@ -104,4 +108,5 @@
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
   color: $color-white;
   background-color: $color-button-disabled;
+  cursor: default;
 }
