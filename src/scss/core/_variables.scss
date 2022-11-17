@@ -1,7 +1,13 @@
 // fonts
+@font-face {
+    font-family: 'Thunderman';
+    src: url('../images/Thunderman.ttf');
+}
+
 $font-family-merriweather: 'Merriweather', serif;
 $font-family-montserrat: 'Montserrat', sans-serif;
 $font-family-opensans: 'Open Sans', sans-serif;
+$font-family-thunderman: 'Thunderman', sans-serif;
 
 // colors
 $color-black: black;
@@ -35,3 +41,9 @@ $yellow-green-color-wheel: #00AA00ff;
 $selective-yellow: #FFB800ff;
 $rose-pink: #FF66D3ff;
 $purple-shadow: rgba(25, 4, 44, 0.20);
+/**/
+$amazon: #397156ff;
+$melon: #FFBEA2ff;
+$cool-grey: #8086ADff;
+$light-coral: #FF7E88ff;
+$naples-yellow: #F3D348ff;

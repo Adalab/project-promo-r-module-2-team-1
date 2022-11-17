@@ -8,15 +8,15 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="" />
-  <title>Awesome profile-cards</title>
+  <link rel="icon" href="./assets/images/favicon-5.png" />
+  <title>Algebraic profile-cards</title>
 </head>
 
-<body>
+<body class="body__profilecards">
   <!--HEADER-->
   <header class="headerprofilecards">
     <a href="./index.html">
-      <img class="headerprofilecards__img" src="./assets/images/logo-awesome-profile-cards.svg" alt="Logo Awesome Profile Cards" />
+      <img class="headerprofilecards__img" src="./assets/images/logo-coding-time-2.png" alt="Logo Awesome Profile Cards" />
     </a>
   </header>
 
@@ -73,53 +73,27 @@
               <i class="legend__icon fa-regular fa-object-ungroup"></i>
               Diseña
             </legend>
-            <img
-              class="js-arrow-design legend__scroll arrow-up"
-              src="./assets/images/ico-scroll-down.svg"
-              alt="Icono desplegable"
-            />
+            <img class="js-arrow-design legend__scroll arrow-up" src="./assets/images/espada-3.png" alt="Icono desplegable" />
           </section>
           <section class="js-design__wrap2 design__wrap2">
             <h3 class="color">Colores</h3>
             <section class="palettes">
               <div class="palettes__1">
-                <input
-                  class="palettes__1--radio"
-                  id="palette1"
-                  type="radio"
-                  name="palette"
-                  value="1"
-                  required
-                  checked
-                />
+                <input class="palettes__1--radio" id="palette1" type="radio" name="palette" value="1" required checked />
                 <div class="palettes__1--color dark-green"></div>
                 <div class="palettes__1--color dirty-blue"></div>
                 <div class="palettes__1--color hospital-green"></div>
               </div>
 
               <div class="palettes__2">
-                <input
-                  class="palettes__2--radio"
-                  id="palette2"
-                  type="radio"
-                  name="palette"
-                  value="2"
-                  required
-                />
+                <input class="palettes__2--radio" id="palette2" type="radio" name="palette" value="2" required />
                 <div class="palettes__2--color dried-blood"></div>
                 <div class="palettes__2--color rusty-red"></div>
                 <div class="palettes__2--color tomato"></div>
               </div>
 
               <div class="palettes__3">
-                <input
-                  class="palettes__3--radio"
-                  id="palette3"
-                  type="radio"
-                  name="palette"
-                  value="3"
-                  required
-                />
+                <input class="palettes__3--radio" id="palette3" type="radio" name="palette" value="3" required />
                 <div class="palettes__3--color slate"></div>
                 <div class="palettes__3--color faded-orange"></div>
                 <div class="palettes__3--color light-grey-blue"></div>
@@ -128,105 +102,55 @@
           </section>
           <div class="line"></div>
         </fieldset>
-
         <fieldset class="fill">
           <section class="fill__wrap1 js-fill-clicker">
             <legend class="fill__wrap1--legend">
               <i class="legend__icon fa-regular fa-keyboard"></i>
               Rellena
             </legend>
-            <img
-              class="js-arrow-fill legend__scroll arrow-down"
-              src="./assets/images/ico-scroll-down.svg"
-              alt="Icono desplegable"
-            />
+            <img class="js-arrow-fill legend__scroll arrow-down fill__arrow" src="./assets/images/espada-3.png"
+              alt="Icono desplegable" />
           </section>
 
           <section class="js-fill__wrap2 fill__wrap2 collapsed">
             <label for="name" class="fill__label">Nombre completo</label>
-            <input
-              class="js-name fill__input"
-              id="name"
-              type="text"
-              name="name"
-              required
-              placeholder="Ej: Sally Jill"
-            />
+            <input class="js-name fill__input" id="name" type="text" name="name" required placeholder="Ej: Sally Jill" />
 
             <label for="job" class="fill__label">Puesto</label>
-            <input
-              class="js-job fill__input"
-              id="job"
-              type="text"
-              name="job"
-              required
-              placeholder="Ej: Front-end unicorn"
-            />
+            <input class="js-job fill__input" id="job" type="text" name="job" required placeholder="Ej: Front-end unicorn" />
 
             <label class="fill__label">Imagen de perfil</label>
             <div class="js-photo fill__container">
               <label for="photo" class="fill__button">Añadir imagen</label>
-              <input
-                type="file"
-                class="js__profile-upload-btn fill__input fill__input--hide"
-                id="photo"
-                name="photo"
-                required
-              />
+              <input type="file" class="js__profile-upload-btn fill__input fill__input--hide" id="photo" name="photo"
+                required />
 
               <div class="js__profile-preview fill__square"></div>
             </div>
 
             <label for="email" class="fill__label">Email</label>
-            <input
-              class="js-email fill__input"
-              id="email"
-              type="email"
-              name="email"
-              required
-              placeholder="Ej: sally-hill@gmail.com"
-            />
+            <input class="js-email fill__input" id="email" type="email" name="email" required
+              placeholder="Ej: sally-hill@gmail.com" />
 
             <label for="phone" class="fill__label">Teléfono</label>
-            <input
-              class="js-phone fill__input"
-              id="phone"
-              type="tel"
-              name="phone"
-              required
-              placeholder="Ej: 555-55-55-55"
-            />
+            <input class="js-phone fill__input" id="phone" type="tel" name="phone" required placeholder="Ej: 555-55-55-55" />
 
             <label for="linkedin" class="fill__label">Linkedin</label>
-            <input
-              class="js-linkedin fill__input"
-              id="linkedin"
-              type="text"
-              name="linkedin"
-              required
-              placeholder="Ej: linkedin.com/in/sally.hill"
-            />
+            <input class="js-linkedin fill__input" id="linkedin" type="text" name="linkedin" required
+              placeholder="Ej: linkedin.com/in/sally.hill" />
 
             <label for="github" class="fill__label">Github</label>
-            <input
-              class="js-github fill__input"
-              id="github"
-              type="text"
-              name="github"
-              required
-              required
-              placeholder="Ej: @sally-hill"
-            />
+            <input class="js-github fill__input" id="github" type="text" name="github" required required
+              placeholder="Ej: @sally-hill" />
           </section>
           <div class="line"></div>
         </fieldset>
-
         <fieldset class="share">
             <section class="share__wrap1 js-share-clicker">
                 <legend class="share__wrap1--legend">
                     <i class="legend__icon fa-solid fa-share-nodes"></i>Comparte
                 </legend>
-                <img class="js-arrow-share legend__scroll arrow-down" src="./assets/images/ico-scroll-down.svg"
+                <img class="js-arrow-share legend__scroll arrow-down" src="./assets/images/espada-3.png"
                     alt="Icono desplegable">
             </section>
             <div class="js-share-wrap-all collapsed">
@@ -259,7 +183,7 @@
   <!--FOOTER-->
   <footer class="footer">
     <a href="./index.html">
-      <p class="footer__paragraph">Awesome profile-cards &copy;2022</p>
+      <p class="footer__paragraph">Algebraic profile-cards &copy;2022</p>
     </a>
     <a href="https://adalab.es/" target="blank"><img class="footer__img" src="./assets/images/logo-adalab.png"
         alt="Logo Adalab" /></a>

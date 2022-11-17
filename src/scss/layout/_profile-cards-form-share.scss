@@ -38,7 +38,7 @@
       text-decoration: none;
       text-align: center;
       color: $color-white;
-      background-color: $blue-ncs;
+      background-color: $amazon;
       border-radius: 12px;
       border: none;
       padding: 13px 18px 13px 18px;
@@ -73,9 +73,10 @@
 
     &--link {
       font-family: $font-family-opensans;
+      font-weight: 700;
       text-align: center;
       font-size: rem(12);
-      color: $blue-ncs;
+      color: $amazon;
       overflow: hidden;
       margin-bottom: 10px;
       padding-top: 5px;

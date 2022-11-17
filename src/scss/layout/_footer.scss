@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-top: solid 1px $color-white-two;
+  border-top: solid 1px $amazon;
 
   @media all and (min-width: 768px) {
     height: 60px;
@@ -14,7 +14,7 @@
   }
 
   &__paragraph {
-    color: $color-brownish-grey;
+    color: $amazon;
     opacity: 0.5;
     font-family: $font-family-opensans;
     font-size: 14px;
